@@ -22,7 +22,7 @@ header {
 }
 
 .logo-container img {
-    max-height: 150px;
+    max-height: 80px;
 }
 
 .search-bar {
@@ -60,32 +60,33 @@ header {
     background-color: #ff453a; /* Rojo del logo */
     color: white;
     text-align: center;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 30px 5px 0;
+    margin: 10px 0;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
     position: relative;
-    height: 200px; /* Aumentamos la altura */
+    height: 180px; /* Aumentamos la altura */
     overflow: hidden;
 }
 
 .mascot {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    text-align: left;
+    /* top: 0;
+    left: 0; */
     z-index: 1; /* Para asegurarse de que esté encima de las slides */
-    height: 100%; /* Asegura que la imagen ocupe todo el alto del carrusel */
+    height: 90%; /* Asegura que la imagen ocupe todo el alto del carrusel */
     width: auto; /* Mantener proporción */
 }
 
 .mascot img {
-    max-height: 100%; /* Escalar la imagen dentro del contenedor */
+    max-height: 90%; /* Escalar la imagen dentro del contenedor */
     width: auto;
 }
 
 .slide {
     /* font-family: Arial, sans-serif; */
-    font-size: 3rem;
+    font-size: 2rem;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
