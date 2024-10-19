@@ -106,6 +106,7 @@ main {
 h2 {
     text-align: center;
     color: #0059b3; /* Azul del logo */
+    font-size: 2rem;    
     margin-bottom: 20px;
 }
 
