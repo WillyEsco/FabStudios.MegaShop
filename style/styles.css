@@ -1,0 +1,147 @@
+* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0059b3; /* Azul tomado del logo */
+    padding: 15px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12); /* Añadido para estilo Material */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container img {
+    max-height: 150px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.12); /* Borde estilo Material */
+    border-radius: 24px 0 0 24px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #ffcc00; /* Amarillo del logo */
+    color: #333;
+    border-radius: 0 24px 24px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.search-bar button:hover {
+    background-color: #e6b800; /* Más oscuro en hover */
+}
+
+
+/* Carrusel */
+/* Estilo del carrusel */
+.carousel {
+    background-color: #ff453a; /* Rojo del logo */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    position: relative;
+    height: 200px; /* Aumentamos la altura */
+    overflow: hidden;
+}
+
+.mascot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Para asegurarse de que esté encima de las slides */
+    height: 100%; /* Asegura que la imagen ocupe todo el alto del carrusel */
+    width: auto; /* Mantener proporción */
+}
+
+.mascot img {
+    max-height: 100%; /* Escalar la imagen dentro del contenedor */
+    width: auto;
+}
+
+.slide {
+    /* font-family: Arial, sans-serif; */
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide.active {
+    opacity: 1;
+}
+/* Estilos de productos */
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #0059b3; /* Azul del logo */
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px; /* Material Design Border Radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Material Design Shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+    color: #ff453a; /* Rojo del logo */
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}

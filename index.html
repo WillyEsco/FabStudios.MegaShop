@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaShop</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+    <!-- Header con logo y barra de búsqueda -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="MegaShop Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button><b>Buscar</b></button>
+        </div>
+    </header>
+
+    <!-- Carrusel -->
+    <section class="carousel">
+        <div class="mascot">
+            <img src="./images/mascota-derecha.png" alt="Mascota MegaShop">
+        </div>
+        <div class="slide active">
+            <p>  <b>Descuento del 50% en productos seleccionados</b>  </p>
+        </div>
+        <div class="slide">
+            <p><b>Nuevas colecciones de otoño</b></p>
+        </div>
+        <div class="slide">
+            <p><b>Envío gratis en compras mayores a $100</b></p>
+        </div>
+    </section>
+    <!-- <section class="carousel">
+        <div class="slide active">Descuento del 50% en productos seleccionados</div>
+        <div class="slide">Nuevas colecciones de otoño</div>
+        <div class="slide">Envió gratis en compras mayores a $100</div>
+    </section> -->
+
+    <!-- Sección de productos -->
+    <main>
+        <h2>Productos destacados</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x100" alt="Producto 1">
+                <h3>Producto 1</h3>
+                <p>$25.99</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x100" alt="Producto 2">
+                <h3>Producto 2</h3>
+                <p>$15.49</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x100" alt="Producto 3">
+                <h3>Producto 3</h3>
+                <p>$40.00</p>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/150x100" alt="Producto 4">
+                <h3>Producto 4</h3>
+                <p>$30.99</p>
+            </div>
+        </div>
+    </main>
+<script>
+    const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showNextSlide() {
+    slides[currentSlide].classList.remove('active'); // Ocultar la diapositiva actual
+    currentSlide = (currentSlide + 1) % slides.length; // Mover a la siguiente
+    slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
+}
+
+// Cambiar la diapositiva cada 3 segundos
+setInterval(showNextSlide, 3000);
+</script>
+</body>
+</html>
