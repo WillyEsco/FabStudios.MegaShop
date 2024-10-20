@@ -275,6 +275,7 @@ header {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color:  #0059b3;
     color: white;
     text-align: center;
@@ -282,7 +283,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-
     position: relative;
     padding: 20px 0;
 
@@ -300,11 +300,7 @@ footer img {
     margin-right: 20px; /* Espacio entre el logo y el texto */
 }
 
-footer p {
-    margin: 0;
-    line-height: 50px; 
-    /* Alinea el texto verticalmente con la altura del logo */
-}
+
 /* Botones estilo Material Design 3 */
 .btn-md3 {
     display: inline-flex;
@@ -486,4 +482,12 @@ textarea:focus {
   .Prod-Dest-header .mascota {
     width: 120px;
     height: auto;
+  }
+  footer p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+    line-height: 1;
   }
