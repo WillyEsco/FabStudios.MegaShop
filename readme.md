@@ -10,7 +10,7 @@
 ## Conoce a ROBY nuestra amigable  mascota
 
 <img src="./images/mascota1-frente.png" alt="Roby llevandote las compras" width="200"/><br>
-Nuestra adorable mascota robot está aquí para guiarte en una experiencia de compra fluida, divertida y cómoda, ya que es el encargado de llevar a tu puerta todo lo que necesites.
+Nuestro adorable robot está acá para guiarte en una experiencia de compra fluida, divertida y cómoda, ya que es el encargado de llevar a tu puerta todo lo que necesites.
 
 ---
 
@@ -45,8 +45,8 @@ MegaShop está construido con las siguientes tecnologías:
 ---
 
 ### Desarrollado por *FabStudios*
-<img src="./images/fabStudios.png" alt="Creador" width="300"/>
-![Logo de FabStudios](ruta-del-logo-de-fabstudios)  
+<img src="./images/fabStudios.png" alt="Creador" width="150">
+ 
 ¡Haciendo realidad tus visiones!
 
 ---
