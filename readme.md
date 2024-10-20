@@ -1,15 +1,19 @@
+# <h1 align="center" >__Bienvenido a MegaShop__</h1>
+<p align="center">
+  <img  src="./images/logo.png" alt="logo MegaShop" width="250"/>
+</p>
+<h2 align="center" >¡Tu solución única para todas tus compras!</h1>
 
-# ¡Bienvenido a *MegaShop*!
 
-<img src="./images/logo.png" alt="Descripción de la imagen" width="250"/>
 
-¡Tu solución única para todas tus compras!
+<h1 align="center" >Conoce a ROBY nuestra amigable  mascota</h1>
+<p align="center">
+  <img  src="./images/mascota1-frente.png" width="200"  />
+</p>
 
----
 
-## Conoce a ROBY nuestra amigable  mascota
 
-<img src="./images/mascota1-frente.png" alt="Roby llevandote las compras" width="200"/><br>
+
 Nuestro adorable robot está acá para guiarte en una experiencia de compra fluida, divertida y cómoda, ya que es el encargado de llevar a tu puerta todo lo que necesites.
 
 ---
@@ -38,17 +42,19 @@ MegaShop está construido con las siguientes tecnologías:
 
 ---
 
-## Contáctanos
+## Contactános
 
 ¡No dudes en contactarnos a través de nuestro *Formulario de Contacto*! Estamos siempre disponibles para ayudarte.
 
 ---
 
-### Desarrollado por *FabStudios*
-<img src="./images/fabStudios.png" alt="Creador" width="150">
+<h3 align="center" >Desarrollado por FabStudios</h3>
+<p align="center">
+  <img  src="./images/fabStudios.png" width="150"  />
+</p>
+<h3 align="center" >¡Concretando tus deseos!</h3>
  
-¡Haciendo realidad tus visiones!
 
 ---
 
-Esperamos que disfrutes de tus compras en *MegaShop*. ¡Mantente atento a ofertas y nuevas funcionalidades emocionantes!
+Esperamos que disfrutes de tus compras en *MegaShop*. ¡Mantenéte atento a ofertas y nuevas funcionalidades emocionantes!
