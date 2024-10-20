@@ -9,7 +9,8 @@
 <body>
 
     <!-- Header con logo y barra de búsqueda -->
-    <header>
+    <header class="encabezado">
+
         <div class="logo-container">
             <img src="images/logo.png" alt="MegaShop Logo">
         </div>
@@ -17,7 +18,19 @@
             <input type="text" placeholder="Buscar productos...">
             <button><b>Buscar</b></button>
         </div>
+
     </header>
+            <!-- Navbar -->
+        <nav >
+            <ul class="navbar" >
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#cuenta">Cuenta</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+            </ul>
+        </nav>
 
     <!-- Carrusel -->
     <section class="carousel">
@@ -42,29 +55,43 @@
 
     <!-- Sección de productos -->
     <main>
+        <section id="productos">
         <h2><b>Productos destacados</b></h2>
         <div class="product-grid">
             <div class="product-card">
                 <img src="https://via.placeholder.com/150x100" alt="Producto 1">
                 <h3>Producto 1</h3>
                 <p>$25.99</p>
+                <button>Comprar</button>
             </div>
             <div class="product-card">
                 <img src="https://via.placeholder.com/150x100" alt="Producto 2">
                 <h3>Producto 2</h3>
                 <p>$15.49</p>
+                <button>Comprar</button>
             </div>
             <div class="product-card">
                 <img src="https://via.placeholder.com/150x100" alt="Producto 3">
                 <h3>Producto 3</h3>
                 <p>$40.00</p>
+                <button>Comprar</button>
             </div>
             <div class="product-card">
                 <img src="https://via.placeholder.com/150x100" alt="Producto 4">
                 <h3>Producto 4</h3>
                 <p>$30.99</p>
+                <button>Comprar</button>
             </div>
         </div>
+    </section>
+        <!-- Footer -->
+        <footer>
+            <div class="fabStudios">
+                <a href="#"><img src="./images/fabStudios.png" alt="FabStudios" ></a>
+            </div>
+            <p>&copy; 2024 MegaShop - Todos los derechos reservados.</p>
+   
+        </footer>
     </main>
 <script>
     const slides = document.querySelectorAll('.slide');

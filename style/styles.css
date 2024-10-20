@@ -1,4 +1,4 @@
-* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,8 +21,17 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.carousel {
+    padding-left: 20px; /* Agrega espacio a la izquierda del logo */
+}
+
+ 
+
 .logo-container img {
     max-height: 70px;
+    /* margin-left: 20px; */
+    padding-left: 20px; /* Agrega espacio a la izquierda del logo */
+
 }
 
 .search-bar {
@@ -46,9 +55,11 @@ header {
     border-radius: 0 24px 24px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);   
+    margin-right: 20px; /* Agrega espacio a la derecha del botón */
 }
 
+ 
 .search-bar button:hover {
     background-color: #e6b800; /* Más oscuro en hover */
 }
@@ -100,14 +111,26 @@ header {
 }
 /* Estilos de productos */
 main {
+    flex-grow: 1;  /* Para que ocupe el espacio disponible y el footer se mantenga al final */
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
 }
 
 h2 {
     text-align: center;
     color: #0059b3; /* Azul del logo */
-    font-size: 2rem;    
+    font-size: 2.5rem;    
     margin-bottom: 20px;
+}
+/* Estilos para productos */
+#productos {
+    width: 100%;
+    /* padding: 20px; */
+    margin-bottom: 30px; Agrega espacio debajo de los productos
 }
 
 .product-grid {
@@ -134,6 +157,7 @@ h2 {
     max-width: 100%;
     border-radius: 12px;
     margin-bottom: 15px;
+    height: auto;
 }
 
 .product-card h3 {
@@ -146,4 +170,114 @@ h2 {
     font-size: 1.2rem;
     color: #333;
     font-weight: bold;
+}
+.product-card button {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #e68900;
+}
+/* Estilos básicos para reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Estilos para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para el Header y la Navbar */
+header {
+    background-color:  #0059b3;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between /* Espacio uniforme entre los elementos */
+    padding: 0;
+}
+
+nav ul li {
+    white-space: nowrap;
+    margin: 0 15px; /* Ajusta el espacio entre los ítems de la lista */
+}
+
+nav ul li a {
+    white-space: nowrap; /* Mantiene el texto en una sola línea */
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(118, 46, 219);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+/* Estilos para el Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    background-color:  #0059b3;
+    color: white;
+    text-align: center;
+    /* padding: 10px; */
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+
+    position: relative;
+    padding: 20px 0;
+
+    /* display: flex; */
+    align-items: center;  /* Alinea el contenido verticalmente al centro */
+    /* justify-content: center; Centra horizontalmente */
+    padding: 10px;
+    /* background-color: #004080; */
+    color: white;
+    
+}
+
+footer img {
+    height: 50px;
+    margin-right: 20px; /* Espacio entre el logo y el texto */
+}
+
+footer p {
+    margin: 0;
+    line-height: 50px; /* Alinea el texto verticalmente con la altura del logo */
 }
