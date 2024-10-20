@@ -481,4 +481,9 @@ textarea:focus {
     justify-content: center;
     align-items: center;
     padding-bottom: 3px;
+    line-height: 1;
+  }
+  .Prod-Dest-header .mascota {
+    width: 120px;
+    height: auto;
   }
