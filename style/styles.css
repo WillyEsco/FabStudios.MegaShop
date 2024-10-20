@@ -37,6 +37,7 @@ header {
     align-items: center;
 }
 
+
 .search-bar input {
     padding: 10px;
     border: 2px solid rgba(0, 0, 0, 0.12); /* Borde estilo Material */
@@ -61,7 +62,6 @@ header {
 .search-bar button:hover {
     background-color: #e6b800; /* Más oscuro en hover */
 }
-
 
 /* Carrusel */
 /* Estilo del carrusel */
@@ -460,4 +460,25 @@ textarea:focus {
   .mdc-button--raised:hover {
     background-color: #e68a00;
   }
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
   
+  .modal-header .logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .modal-header .mascota {
+    width: 100px;
+    height: auto;
+  }
+  .Prod-Dest-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+  }
