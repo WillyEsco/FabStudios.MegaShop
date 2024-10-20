@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MegaShop</title>
     <link rel="stylesheet" href="style/styles.css">
+    <!-- Incluye Material Icons desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
@@ -15,20 +17,21 @@
             <img src="images/logo.png" alt="MegaShop Logo">
         </div>
         <div class="search-bar">
+            
             <input type="text" placeholder="Buscar productos...">
             <button><b>Buscar</b></button>
         </div>
 
     </header>
             <!-- Navbar -->
-        <nav >
+        <nav class="navbar-contenedor">
             <ul class="navbar" >
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#cuenta">Cuenta</a></li>
                 <li><a href="#settings">Settings</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#quienes-somos">Nosotros</a></li>
             </ul>
         </nav>
 
@@ -47,12 +50,6 @@
             <p><b>Envío gratis en compras mayores a $100</b></p>
         </div>
     </section>
-    <!-- <section class="carousel">
-        <div class="slide active">Descuento del 50% en productos seleccionados</div>
-        <div class="slide">Nuevas colecciones de otoño</div>
-        <div class="slide">Envió gratis en compras mayores a $100</div>
-    </section> -->
-
     <!-- Sección de productos -->
     <main>
         <section id="productos">
@@ -62,25 +59,50 @@
                 <img src="https://via.placeholder.com/150x100" alt="Producto 1">
                 <h3>Producto 1</h3>
                 <p>$25.99</p>
-                <button>Comprar</button>
+                <!-- Botón con ícono -->
+                <button class="btn-md3">
+                    <span class="btn-md3-icon">
+                    <i class="material-icons">shopping_cart</i> <!-- Usa un icono material -->
+                    </span>
+                    Comprar ahora
+                </button>
+
+                <!-- Search button estilo MD3 -->
+
+
             </div>
             <div class="product-card">
                 <img src="https://via.placeholder.com/150x100" alt="Producto 2">
                 <h3>Producto 2</h3>
                 <p>$15.49</p>
-                <button>Comprar</button>
+                <button class="btn-md3">
+                    <span class="btn-md3-icon">
+                    <i class="material-icons">shopping_cart</i> <!-- Usa un icono material -->
+                    </span>
+                    Comprar ahora
+                </button>
             </div>
             <div class="product-card">
                 <img src="https://via.placeholder.com/150x100" alt="Producto 3">
                 <h3>Producto 3</h3>
                 <p>$40.00</p>
-                <button>Comprar</button>
+                <button class="btn-md3">
+                    <span class="btn-md3-icon">
+                    <i class="material-icons">shopping_cart</i> <!-- Usa un icono material -->
+                    </span>
+                    Comprar ahora
+                </button>
             </div>
             <div class="product-card">
                 <img src="https://via.placeholder.com/150x100" alt="Producto 4">
                 <h3>Producto 4</h3>
                 <p>$30.99</p>
-                <button>Comprar</button>
+                <button class="btn-md3">
+                    <span class="btn-md3-icon">
+                    <i class="material-icons">shopping_cart</i> <!-- Usa un icono material -->
+                    </span>
+                    Comprar ahora
+                </button>
             </div>
         </div>
     </section>
@@ -89,8 +111,7 @@
             <div class="fabStudios">
                 <a href="#"><img src="./images/fabStudios.png" alt="FabStudios" ></a>
             </div>
-            <p>&copy; 2024 MegaShop - Todos los derechos reservados.</p>
-   
+            <p>&copy; 2024 MegaShop> - Derechos Reservados.</p>           
         </footer>
     </main>
 <script>

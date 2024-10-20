@@ -1,0 +1,45 @@
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    padding: 0;
+}
+
+nav ul li {
+    /* white-space: nowrap; */
+    padding: 0 !important ;
+    margin: 0 !important; 
+    /* Ajusta el espacio entre los ítems de la lista */
+}
+
+nav ul li a {
+    white-space: nowrap; 
+    /* Mantiene el texto en una sola línea */
+}
+.navbar-contenedor {
+    display: flex;
+    justify-content: center; /* Centraliza el contenido */
+}
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(118, 46, 219);
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #ff9800;
+    color: #fff;
+}
