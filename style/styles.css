@@ -374,7 +374,7 @@ footer p {
 
 .modal-content {
     background-color: azure;
-    padding: 5%;
+    padding: 20px;
     border-radius: 8px;
     max-width: 500px;
     width: 90%;
@@ -468,7 +468,7 @@ textarea:focus {
   }
   
   .modal-header .logo {
-    width: 80px;
+    width: 60px;
     height: auto;
   }
   
