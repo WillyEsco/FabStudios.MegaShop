@@ -2,7 +2,7 @@
 <p align="center">
   <img  src="./images/logo.png" alt="logo MegaShop" width="250"/>
 </p>
-<h2 align="center" >¡Tu solución única para todas tus compras!</h1>
+<h2 align="center" >¡La solución única para todas tus compras!</h1>
 
 
 

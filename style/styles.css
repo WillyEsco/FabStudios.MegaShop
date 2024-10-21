@@ -23,14 +23,16 @@ header {
 }
 
 .carousel {
-    padding-left: 20px; /* Agrega espacio a la izquierda del logo */
+    padding-left: 20px; 
+    /* Agrega espacio a la izquierda del logo */
 }
 
 
 .logo-container img {
     max-height: 70px;
     /* margin-left: 20px; */
-    padding-left: 20px; /* Agrega espacio a la izquierda del logo */
+    padding-left: 20px; 
+    /* Agrega espacio a la izquierda del logo */
 }
 
 .search-bar {
@@ -41,7 +43,8 @@ header {
 
 .search-bar input {
     padding: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.12); /* Borde estilo Material */
+    border: 2px solid rgba(0, 0, 0, 0.12); 
+    /* Borde estilo Material */
     border-radius: 24px 0 0 24px;
     outline: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
@@ -50,7 +53,8 @@ header {
 .search-bar button {
     padding: 12px 20px;
     border: none;
-    background-color: #ffcc00; /* Amarillo del logo */
+    background-color: #ffcc00; 
+    /* Amarillo del logo */
     color: #333;
     border-radius: 0 24px 24px 0;
     cursor: pointer;
@@ -61,13 +65,14 @@ header {
 
  
 .search-bar button:hover {
-    background-color: #e6b800; /* Más oscuro en hover */
+    background-color: #e6b800; 
+    /* Más oscuro en hover */
 }
 
 /* Carrusel */
-/* Estilo del carrusel */
 .carousel {
-    background-color: #ff453a; /* Rojo del logo */
+    background-color: #ff453a; 
+    /* Rojo del logo */
     color: white;
     text-align: center;
     padding: 30px 5px 0;
@@ -75,7 +80,8 @@ header {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
     position: relative;
-    height: 180px; /* Aumentamos la altura */
+    height: 180px; 
+    /* Aumentamos la altura */
     overflow: hidden;
 }
 
@@ -84,13 +90,17 @@ header {
     text-align: left;
     /* top: 0;
     left: 0; */
-    z-index: 1; /* Para asegurarse de que esté encima de las slides */
-    height: 90%; /* Asegura que la imagen ocupe todo el alto del carrusel */
-    width: auto; /* Mantener proporción */
+    z-index: 1; 
+    /* Para asegurarse de que esté encima de las slides */
+    height: 90%; 
+    /* Asegura que la imagen ocupe todo el alto del carrusel */
+    width: auto; 
+    /* Mantener proporción */
 }
 
 .mascot img {
-    max-height: 90%; /* Escalar la imagen dentro del contenedor */
+    max-height: 90%; 
+    /* Escalar la imagen dentro del contenedor */
     width: auto;
 }
 
@@ -110,7 +120,8 @@ header {
 }
 /* Estilos de productos */
 main {
-    flex-grow: 1;  /* Para que ocupe el espacio disponible y el footer se mantenga al final */
+    flex-grow: 1; 
+     /* Para que ocupe el espacio disponible y el footer se mantenga al final */
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -125,7 +136,8 @@ main {
 }
 h2 {
     text-align: center;
-    color: #0059b3; /* Azul del logo */
+    color: #0059b3; 
+    /* Azul del logo */
     font-size: 2.5rem;    
     margin-bottom: 20px;
 }
@@ -133,7 +145,8 @@ h2 {
 #productos {
     width: 100%;
     /* padding: 20px; */
-    margin-bottom: 30px;/*  Agrega espacio debajo de los productos */
+    margin-bottom: 30px;
+    /*  Agrega espacio debajo de los productos */
 }
 
 .product-grid {
@@ -144,8 +157,10 @@ h2 {
 
 .product-card {
     background-color: white;
-    border-radius: 12px; /* Material Design Border Radius */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Material Design Shadow */
+    border-radius: 12px; 
+    /* Material Design Border Radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); 
+    /* Material Design Shadow */
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -165,7 +180,8 @@ h2 {
 
 .product-card h3 {
     margin: 15px 0 10px;
-    color: #ff453a; /* Rojo del logo */
+    color: #ff453a; 
+    /* Rojo del logo */
     font-size: 1.2rem;
 }
 
@@ -224,7 +240,8 @@ header {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #f5f5f5; /* Color de fondo de la navbar */
+    background-color: #f5f5f5; 
+    /* Color de fondo de la navbar */
     padding: 10px 0;
 }
 
@@ -234,7 +251,8 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     grid-gap: 15px;
     list-style: none;
-    justify-items: center; /* Para centrar los ítems horizontalmente */
+    justify-items: center; 
+    /* Para centrar los ítems horizontalmente */
     text-align: center;
     padding: 0;
 }
@@ -252,7 +270,8 @@ header {
 .navbar li a:hover {
     background-color: #ff9800;
     color: #fff;
-    border-radius: 30px ;/* Borde más redondeado para un look moderno */
+    border-radius: 30px ;
+    /* Borde más redondeado para un look moderno */
 }
 
 /* Ajuste para pantallas pequeñas */
@@ -264,7 +283,8 @@ header {
 
 @media (max-width: 500px) {
     .navbar {
-        grid-template-columns: repeat(2, 1fr); /* Dos ítems por fila para pantallas más pequeñas */
+        grid-template-columns: repeat(2, 1fr); 
+        /* Dos ítems por fila para pantallas más pequeñas */
     }
 }
 * {
@@ -288,7 +308,8 @@ footer {
     padding: 20px 0;
 
     /* display: flex; */
-    align-items: center;  /* Alinea el contenido verticalmente al centro */
+    align-items: center;  
+    /* Alinea el contenido verticalmente al centro */
     /* justify-content: center; Centra horizontalmente */
     padding: 10px;
     /* background-color: #004080; */
@@ -298,7 +319,8 @@ footer {
 
 footer img {
     height: 50px;
-    margin-right: 10px; /* Espacio entre el logo y el texto */
+    margin-right: 10px; 
+    /* Espacio entre el logo y el texto */
 }
 
 
@@ -308,36 +330,46 @@ footer img {
     align-items: center;
     justify-content: center;
     padding: 12px 24px;
-    background-color: #ff6f00; /* Color de fondo vibrante */
-    color: #fff; /* Color del texto */
+    background-color: #ff6f00; 
+    /* Color de fondo vibrante */
+    color: #fff; 
+    /* Color del texto */
     border: none;
-    border-radius: 30px !important ;/* Esquinas redondeadas */
+    border-radius: 30px !important ;
+    /* Esquinas redondeadas */
     font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
-    box-shadow: none; /* Sin sombra o muy sutil */
+    box-shadow: none; 
+    /* Sin sombra o muy sutil */
     transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Animación */
 }
 
 .btn-md3:hover {
-    background-color: #ff8f00; /* Color más claro al hacer hover */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Elevación al hacer hover */
+    background-color: #ff8f00; 
+    /* Color más claro al hacer hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    /* Elevación al hacer hover */
 }
 
 .btn-md3:active {
-    background-color: #e65100; /* Color más oscuro al hacer click */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra más pequeña */
+    background-color: #e65100; 
+    /* Color más oscuro al hacer click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    /* Sombra más pequeña */
 }
 
 .btn-md3-icon {
-    margin-right: 8px; /* Espacio entre el icono y el texto */
+    margin-right: 8px; 
+    /* Espacio entre el icono y el texto */
 }
 
 /* Botón para la search bar */
 .search-btn {
     background-color: #ff6f00;
     padding: 10px 20px;
-    border-radius: 50px; /* Borde más redondeado para un look moderno */
+    border-radius: 50px; 
+    /* Borde más redondeado para un look moderno */
     color: white;
     border: none;
     font-size: 0.9rem;
@@ -348,12 +380,14 @@ footer img {
 
 .search-btn:hover {
     background-color: #ff8f00;
-    transform: translateY(-2px); /* Pequeño movimiento al hover */
+    transform: translateY(-2px); 
+    /* Pequeño movimiento al hover */
 }
 
 .search-btn:active {
     background-color: #e65100;
-    transform: translateY(0); /* Vuelve al lugar original al click */
+    transform: translateY(0); 
+    /* Vuelve al lugar original al click */
 }
 /* Estilos generales para el modal */
 .modal {
@@ -364,7 +398,8 @@ footer img {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); 
+    /* Fondo semi-transparente */
     justify-content: center;
     align-items: center;
 }
@@ -430,23 +465,29 @@ footer img {
 /* Media Query para pantallas pequeñas (hasta 600px) */
 @media screen and (max-width: 600px) {
     .modal-content {
-      width: 95%; /* Ajusto el ancho para pantallas más pequeñas */
+      width: 95%; 
+      /* Ajusto el ancho para pantallas más pequeñas */
     }
   
     .modal-header .logo,
     .modal-header .mascota {
-      width: 80px; /* Reduzco el tamaño del logo y la mascota en pantallas pequeñas */
+      width: 80px; 
+      /* Reduzco el tamaño del logo y la mascota en pantallas pequeñas */
     }
   
     .modal-body input,
     .modal-body textarea {
-      padding: 10px; /* Reduzco el padding para que el form sea más compacto */
-      font-size: 0.9rem; /* Ajusto el tamaño del texto */
+      padding: 10px; 
+      /* Reduzco el padding para que el form sea más compacto */
+      font-size: 0.9rem; 
+      /* Ajusto el tamaño del texto */
     }
   
     .modal-body button {
-      padding: 10px; /* Ajusto el tamaño del botón */
-      font-size: 1rem; /* Reduzco el tamaño del texto en el botón */
+      padding: 10px; 
+      /* Ajusto el tamaño del botón */
+      font-size: 1rem; 
+      /* Reduzco el tamaño del texto en el botón */
     }
 
 /* ---------------------------- */
@@ -491,7 +532,8 @@ input, textarea {
 
 input:focus,
 textarea:focus {
-    border-color: #6200ea; /* Color del branding */
+    border-color: #6200ea; 
+    /* Color del branding */
 }
 
 .mdc-button {
@@ -519,14 +561,14 @@ textarea:focus {
     font-family: 'Roboto', sans-serif;
     width: 100%;
     box-sizing: border-box;
-    
     display: flex; /* Flexbox para alinear el texto y el icono */
     justify-content: center; /* Centra el contenido horizontalmente */
     align-items: center; /* Centra el contenido verticalmente */
   }
   
   .mdc-button--raised i {
-    margin-left: 8px; /* Espacio entre el texto y el icono */
+    margin-left: 8px; 
+    /* Espacio entre el texto y el icono */
   }
   
   .mdc-button--raised:hover {
@@ -559,19 +601,23 @@ textarea:focus {
   } */
 
 /* Media query para pantallas más pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .modal-header {
-      flex-direction: column; /* Los elementos se apilan en pantallas pequeñas */
+      flex-direction: column; 
+      /* Los elementos se apilan en pantallas pequeñas */
       text-align: center;
     }
   
     .logo, .mascota {
-    max-width: 100px;  /*  Reducimos el tamaño de las imágenes */
+    max-width: 100px;  
+    /*  Reducimos el tamaño de las imágenes */
     }
   
     h2 {
-      font-size: 20px; /* Reducimos el tamaño del texto */
-      margin: 10px 0; /* Ajustamos los márgenes */
+      font-size: 20px; 
+      /* Reducimos el tamaño del texto */
+      margin: 10px 0; 
+      /* Ajustamos los márgenes */
     }
   }
   
