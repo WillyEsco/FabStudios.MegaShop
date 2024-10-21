@@ -601,26 +601,26 @@ textarea:focus {
   } */
 
 /* Media query para pantallas más pequeñas */
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .modal-header {
       flex-direction: column; 
-      /* Los elementos se apilan en pantallas pequeñas */
+
       text-align: center;
     }
   
     .logo, .mascota {
     max-width: 100px;  
-    /*  Reducimos el tamaño de las imágenes */
+
     }
   
     h2 {
       font-size: 20px; 
-      /* Reducimos el tamaño del texto */
+
       margin: 10px 0; 
-      /* Ajustamos los márgenes */
+
     }
   }
-  
+   */
 
   .Prod-Dest-header {
     display: flex;
