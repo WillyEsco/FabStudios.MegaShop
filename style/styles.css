@@ -601,7 +601,7 @@ textarea:focus {
   } */
 
 /* Media query para pantallas más pequeñas */
-@media (max-width: 500px) {
+@media (max-width: 400px) {
     .modal-header {
       flex-direction: column; 
       /* Los elementos se apilan en pantallas pequeñas */
