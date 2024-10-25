@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="content">
 
     <!-- Header con logo y barra de búsqueda -->
     <header class="encabezado">
@@ -30,12 +31,12 @@
             <!-- Navbar -->
         <nav class="navbar-contenedor">
             <ul class="navbar" >
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="./index.html">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
                 <li><a href="#cuenta">Cuenta</a></li>
                 <li><a href="#settings">Settings</a></li>
                 <li><a href="#" id="contact-link">Contacto</a></li> <!-- Llama al modal -->
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
 <!-- Modal de contacto -->
@@ -138,6 +139,7 @@
             </div>
         </div>
     </section>
+</main>
         <!-- Footer -->
         <footer>
             <div class="fabStudios">
@@ -145,10 +147,20 @@
             </div>
             <p>&copy; 2024 MegaShop - Derechos Reservados.</p>           
         </footer>
-    </main>
+        <div>
+        </body>
+
 <script>
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
+function showNextSlide() {
+    slides[currentSlide].classList.remove('active'); // Ocultar la diapositiva actual
+    currentSlide = (currentSlide + 1) % slides.length; // Mover a la siguiente
+    slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
+}
+// Cambiar la diapositiva cada 3 segundos
+setInterval(showNextSlide, 3000);
+
 // Obtener el modal y el enlace de contacto
 var modal = document.getElementById("contactModal");
 var contactLink = document.getElementById("contact-link");
@@ -170,14 +182,7 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-function showNextSlide() {
-    slides[currentSlide].classList.remove('active'); // Ocultar la diapositiva actual
-    currentSlide = (currentSlide + 1) % slides.length; // Mover a la siguiente
-    slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
-}
 
-// Cambiar la diapositiva cada 3 segundos
-setInterval(showNextSlide, 3000);
 </script>
 </body>
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaShop</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <!-- Incluye Material Icons desde Google Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+
+    <!-- Header con logo y barra de búsqueda -->
+    <header class="encabezado">
+
+        <div class="logo-container">
+            <img src="images/logo.png" alt="MegaShop Logo">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar productos...">
+            <button>
+                <b>BUSCAR</b>
+            </button>
+        </div>
+
+    </header>
+            <!-- Navbar -->
+        <nav class="navbar-contenedor">
+            <ul class="navbar" >
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#cuenta">Cuenta</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#" id="contact-link">Contacto</a></li> <!-- Llama al modal -->
+                <li><a href="#nosotros">Nosotros</a></li>
+            </ul>
+        </nav>
+<!-- Modal de contacto -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+            <img src="./images/logo.png" alt="MegaShop Logo" class="logo">
+            <h2>Contacto</h2>
+            <img src="./images/mascota1-frente.png" alt="Mascota frente 1 MegaShop" class="mascota">
+          </div>
+        <form action="https://formspree.io/f/xzzbzzge" method="POST">
+            <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder="Ingresa tu Nombre...">
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="tu e-Mail...">
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" required placeholder="y tu sugerencia para MegaShop..."></textarea>
+            </div>
+
+            <button type="submit" class="mdc-button mdc-button--raised">
+                ENVIAR <i class="material-icons">send</i>
+            </button>
+        </form>
+    </div>
+</div>
+  
+     <!-- Main Content -->
+  <main class="nosotros-section">
+    <h2>Conoce más sobre MegaShop</h2>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/nBAK7Paq5V0" 
+              title="Video de MegaShop" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>En MegaShop, nos dedicamos a brindarte la mejor experiencia de compra en línea con una amplia variedad de productos de calidad. ¡Descubre todo lo que tenemos para ofrecerte!</p>
+  </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="fabStudios">
+                <a href="#"><img src="./images/fabStudios.png" alt="FabStudios" ></a>
+            </div>
+            <p>&copy; 2024 MegaShop - Derechos Reservados.</p>           
+        </footer>
+    </main>
+<script>
+
+// Al hacer clic en "Contacto", mostrar el modal
+contactLink.onclick = function() {
+    modal.style.display = "flex";
+}
+
+// Al hacer clic en la "X", cerrar el modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// Al hacer clic fuera del modal, cerrar el modal
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+</script>
+    </div>
+</body>
+</html>

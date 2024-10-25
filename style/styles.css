@@ -4,13 +4,29 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
+ body {
     /* font-family: 'Arial', sans-serif; */
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
+.content {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
 /* Estilos del header */
 header {
     display: flex;
@@ -139,7 +155,7 @@ h2 {
     color: #0059b3; 
     /* Azul del logo */
     font-size: 2.5rem;    
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 /* Estilos para productos */
 #productos {
@@ -225,6 +241,9 @@ header {
     background-color:  #0059b3;
     padding: 10px 0;
     text-align: center;
+    margin-bottom: 0;
+ 
+  
 }
 
 /* Estilos generales para resetear márgenes y padding */
@@ -243,6 +262,8 @@ header {
     background-color: #f5f5f5; 
     /* Color de fondo de la navbar */
     padding: 10px 0;
+ 
+  
 }
 
 /* Estilos para la lista de navegación */
@@ -255,6 +276,8 @@ header {
     /* Para centrar los ítems horizontalmente */
     text-align: center;
     padding: 0;
+ 
+  
 }
 
 /* Estilos para los links de la navbar */
@@ -641,3 +664,25 @@ textarea:focus {
     padding-bottom: 3px;
     line-height: 1;
   }
+  /* Sección Nosotros */
+.nosotros-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0;
+
+  }
+  
+  .video-container {
+    margin: 5px 0;
+  }
+/* Contenedor principal que ocupa el viewport */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+    
