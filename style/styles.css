@@ -716,3 +716,33 @@ h2 {
       aspect-ratio: 16 / 9;
     }
   }
+  /* Estilo general para la sección */
+.nosotros-section {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+  .nosotros-section {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+  
+  /* Reducción del tamaño del h2 en móviles */
+  .nosotros-section h2 {
+      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: 10px;
+  }
+
+  /* Ajuste del iframe del video para ocupar el ancho del contenedor */
+  .nosotros-section iframe {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+  }
+}
