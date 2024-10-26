@@ -685,4 +685,34 @@ textarea:focus {
     flex-direction: column;
     min-height: 100vh;
   }
-    
+/* Estilos generales */
+h2 {
+    font-size: 2em; /* Tamaño estándar para escritorio */
+  }
+  
+
+  /* Ajustes para tablets (pantallas medianas) */
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.5em; /* Reduce el tamaño del h2 para tablets */
+    }
+  
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.2em; /* Reduce el tamaño del h2 aún más para móviles */
+    }
+  
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+  }
