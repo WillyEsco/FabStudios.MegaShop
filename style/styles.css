@@ -657,7 +657,12 @@ textarea:focus {
     width: 120px;
     height: auto;
   }
-  
+  @media (max-width: 600px) {
+    .Prod-Dest-header {
+      flex-direction: column;
+      text-align: center;
+      }
+    }
   /* Sección Nosotros */
 .nosotros-section {
     flex: 1;
