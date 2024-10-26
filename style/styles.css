@@ -39,7 +39,7 @@ header {
 }
 
 .carousel {
-    padding-left: 20px; 
+    padding-left: 10px; 
     /* Agrega espacio a la izquierda del logo */
 }
 
@@ -138,7 +138,7 @@ header {
 main {
     flex-grow: 1; 
      /* Para que ocupe el espacio disponible y el footer se mantenga al final */
-    padding: 20px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -161,14 +161,15 @@ h2 {
 #productos {
     width: 100%;
     /* padding: 20px; */
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     /*  Agrega espacio debajo de los productos */
 }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 10px;
 }
 
 .product-card {
@@ -656,14 +657,7 @@ textarea:focus {
     width: 120px;
     height: auto;
   }
-  footer p {
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 3px;
-    line-height: 1;
-  }
+  
   /* Sección Nosotros */
 .nosotros-section {
     flex: 1;
@@ -745,4 +739,35 @@ h2 {
       height: auto;
       aspect-ratio: 16 / 9;
   }
+}
+/* Estilos para el footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0055aa; /* Cambia esto al color de fondo de tu elección */
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+footer img {
+  width: 40px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto;
+  margin-right: 10px; /* Espacio entre el logo y el texto */
+}
+footer p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  line-height: 1;
+}
+h2 {
+  text-align: center;
+  color: #0059b3; 
+  /* Azul del logo */
+  font-size: 2.5rem;    
+  margin-bottom: 0px;
 }
