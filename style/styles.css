@@ -662,6 +662,11 @@ textarea:focus {
       flex-direction: column;
       text-align: center;
       }
+      .carousel p {
+        font-size: 1.5rem; 
+        /* Leyenda del carrousel para celulares de pantallas chicas */
+
+    }
     }
   /* Sección Nosotros */
 .nosotros-section {
