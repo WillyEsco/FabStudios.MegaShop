@@ -704,7 +704,7 @@ h2 {
   
 
   /* Ajustes para tablets (pantallas medianas) */
-  @media (max-width: 768px) {
+  @media (max-width: 600px) {
     h2 {
       font-size: 1.5em; /* Reduce el tamaño del h2 para tablets */
     }
