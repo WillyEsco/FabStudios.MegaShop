@@ -303,6 +303,8 @@ body {
     background-color: #f5f5f5; 
     /* Color de fondo de la navbar */
     padding: 10px 10px;
+    overflow: visible;
+    /* Para que los elementos floten fuera del contenedor */
 }
 
 /* Estilos para la lista de navegación */
@@ -720,7 +722,7 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 0;
+    padding-top: 10px;
 
   }
   
@@ -887,7 +889,38 @@ h2 {
 }
 /* Estilos para el modal */
 
+/* Estilo para el navbar */
+.navbar a {
+  color: #4A4A4A; /* Color de texto en el navbar */
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px; /* Bordes redondeados para alinearse a MD3 */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
 
+/* Estilo de hover */
+.navbar a:hover {
+  background-color: #FFB74D; /* Color del hover, que ya está alineado con otros hovers */
+  color: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para elevar el botón */
+}
+.nav-link:hover {
+  z-index: 9;
+}
+main .nosotros-section {
+  padding: 20px;
+  text-align: center;
+  z-index: 1;
+}
+.nav-link {
+  padding: 10px 20px; /* Ajusta estos valores según sea necesario */
+  line-height: 1.5;
+}
+.navbar-container {
+  margin-bottom: 5px;
+}
 
 
 
