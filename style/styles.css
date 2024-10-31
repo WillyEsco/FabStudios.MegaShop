@@ -737,14 +737,16 @@ textarea:focus {
 h2 {
     font-size: 2em; /* Tamaño estándar para escritorio */
   }
-  
+
 
   /* Ajustes para tablets (pantallas medianas) */
   @media (max-width: 600px) {
     h2 {
       font-size: 1.5em; /* Reduce el tamaño del h2 para tablets */
     }
-  
+    .modal-title {
+      font-size: 1.5rem; /* Ajusta el tamaño a tu preferencia */
+    }
     iframe {
       width: 100%;
       height: auto;
@@ -756,6 +758,9 @@ h2 {
   @media (max-width: 480px) {
     h2 {
       font-size: 1.2em; /* Reduce el tamaño del h2 aún más para móviles */
+      .modal-title {
+        font-size: 1.5rem; /* Ajusta el tamaño a tu preferencia */
+      }
     }
   
     iframe {
