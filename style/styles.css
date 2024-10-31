@@ -909,3 +909,13 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 0px;
 }
+/* -------- */
+  /* Reset básico */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+
