@@ -47,7 +47,7 @@ header {
 .logo-container img {
     max-height: 70px;
     /* margin-left: 20px; */
-    padding-left: 20px; 
+    padding-left: 0; 
     /* Agrega espacio a la izquierda del logo */
 }
 
@@ -539,7 +539,7 @@ footer img {
   }
 
 /* ---------------------------- */   
-  }
+  
   
 label {
     display: block;
@@ -882,7 +882,7 @@ h2 {
   display: flex;
   justify-content: flex-end;
   gap: 20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .icons-container .material-icons {
