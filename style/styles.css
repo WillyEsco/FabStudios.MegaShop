@@ -67,7 +67,7 @@ header {
 }
 
 .search-bar button {
-    padding: 12px 20px;
+  padding: 7px 20px;
     border: none;
     background-color: #ffcc00; 
     /* Amarillo del logo */
@@ -76,7 +76,7 @@ header {
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);   
-    margin-right: 20px; /* Agrega espacio a la derecha del botón */
+    margin-right: 10px; /* Agrega espacio a la derecha del botón */
 }
 
  
@@ -263,8 +263,6 @@ header {
     background-color: #f5f5f5; 
     /* Color de fondo de la navbar */
     padding: 10px 10px;
- 
-  
 }
 
 /* Estilos para la lista de navegación */
@@ -277,8 +275,6 @@ header {
     /* Para centrar los ítems horizontalmente */
     text-align: center;
     padding: 0;
- 
-  
 }
 
 /* Estilos para los links de la navbar */
@@ -788,4 +784,124 @@ h2 {
   /* Azul del logo */
   font-size: 2.5rem;    
   margin-bottom: 0px;
+}
+.searchbar {
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  justify-self: center;
+
+}
+
+.searchbar .form-control {
+  border-radius: 50px 0 0 50px;
+  border-right: none;
+}
+
+.searchbar .btn {
+  border-radius: 0 50px 50px 0;
+}
+
+.reseñas-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.reseñas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.reseña-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  padding: 20px;
+  text-align: left;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.reseña-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.24);
+  transform: translateY(-4px);
+}
+
+.stars {
+  color: gold;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .reseñas-grid {
+      grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+  }
+}
+/* Estilos para el modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.icons-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.icons-container .material-icons {
+  font-size: 24px;
+  color: #fff; /* Color blanco para los íconos */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons-container .material-icons:hover {
+  color: #e6b800; /* Color de hover para los íconos */
+  transform: scale(1.1);
+}
+.encabezado {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0055aa; /* Color original del header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 5px;
 }

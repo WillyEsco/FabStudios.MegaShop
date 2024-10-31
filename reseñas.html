@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaShop - Reseñas</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <!-- Incluye Material Icons desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header con logo y barra de búsqueda -->
+        <header class="encabezado">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="MegaShop Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos...">
+                <button>
+                    <span class="material-icons">search</span>
+                </button>
+            </div>
+            <div class="icons-container">
+                <span class="material-icons">shopping_cart</span>
+                <span class="material-icons">account_circle</span>
+            </div>
+        </header>
+        <!-- Navbar -->
+        <nav class="navbar-contenedor">
+            <ul class="navbar">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Productos</a></li>
+                <li><a href="#" id="contact-link">Contacto</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./reseñas.html">Reseñas</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <main class="reseñas-section">
+            <h2>Reseñas de Nuestros Clientes</h2>
+            <div class="reseñas-grid">
+                <!-- Tarjetas de reseñas -->
+                <div class="reseña-card">
+                    <h3>Producto 1</h3>
+                    <p>"Excelente servicio y productos de alta calidad."</p>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                    <p>- Cliente 1</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 2</h3>
+                    <p>"Muy satisfecho con mi compra, volveré a comprar."</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>- Cliente 2</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 3</h3>
+                    <p>"Entrega rápida y atención al cliente excepcional."</p>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                    <p>- Cliente 3</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 4</h3>
+                    <p>"Gran variedad de productos y buenos precios."</p>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                    <p>- Cliente 4</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 5</h3>
+                    <p>"La mejor tienda online que he encontrado."</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>- Cliente 5</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 6</h3>
+                    <p>"Productos de calidad y buen servicio."</p>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                    <p>- Cliente 6</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 7</h3>
+                    <p>"Muy recomendable, excelente experiencia de compra."</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>- Cliente 7</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 8</h3>
+                    <p>"Fácil de navegar y encontrar lo que necesito."</p>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                    <p>- Cliente 8</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 9</h3>
+                    <p>"Precios competitivos y productos de calidad."</p>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                    <p>- Cliente 9</p>
+                </div>
+                <div class="reseña-card">
+                    <h3>Producto 10</h3>
+                    <p>"Servicio al cliente muy atento y servicial."</p>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <p>- Cliente 10</p>
+                </div>
+            </div>
+        </main>
+            <!-- Modal de Contacto -->
+            <!-- <div id="contact-modal" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h2>Contacto</h2>
+                                <form>
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="email">Correo Electrónico:</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="message">Mensaje:</label>
+                                    <textarea id="message" name="message" required></textarea>
+                                    <button type="submit">Enviar</button>
+                                </form>
+                            </div>
+                  </div> -->
+            <div id="contact-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-header">
+                        <img src="./images/logo.png" alt="MegaShop Logo" class="logo">
+                        <h2>Contacto</h2>
+                        <img src="./images/mascota1-frente.png" alt="Mascota frente 1 MegaShop" class="mascota">
+                      </div>
+                    <form action="https://formspree.io/f/xzzbzzge" method="POST">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Ingresa tu Nombre...">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="tu e-Mail...">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" required placeholder="y tu sugerencia para MegaShop..."></textarea>
+                        </div>
+            
+                        <button type="submit" class="mdc-button mdc-button--raised">
+                            ENVIAR <i class="material-icons">send</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        <!-- Footer -->
+        <footer>
+            <div class="fabStudios">
+                <a href="#"><img src="./images/fabStudios.png" alt="FabStudios"></a>
+            </div>
+            <p>&copy; 2024 MegaShop - Derechos Reservados.</p>
+        </footer>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Obtener el modal
+            var modal = document.getElementById("contact-modal");
+    
+            // Obtener el botón que abre el modal
+            var btn = document.getElementById("contact-link");
+    
+            // Obtener el <span> que cierra el modal
+            var span = document.getElementsByClassName("close")[0];
+    
+            // Cuando el usuario hace clic en el botón, abre el modal
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+    
+            // Cuando el usuario hace clic en <span> (x), cierra el modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+    
+            // Cuando el usuario hace clic en cualquier lugar fuera del modal, lo cierra
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        });
+        </script>
+</body>
+</html>
