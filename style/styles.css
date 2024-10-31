@@ -28,15 +28,7 @@
     bottom: 0;
   }
 /* Estilos del header */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0059b3; /* Azul tomado del logo */
-    padding: 15px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.12); /* Añadido para estilo Material */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+
 
 .carousel {
     padding-left: 10px; 
@@ -58,7 +50,8 @@ header {
 
 
 .search-bar input {
-    padding: 10px;
+    /* padding: 10px; */
+    padding-left: 10px;
     border: 2px solid rgba(0, 0, 0, 0.12); 
     /* Borde estilo Material */
     border-radius: 24px 0 0 24px;
@@ -238,14 +231,14 @@ body {
 }
 
 /* Estilos para el Header y la Navbar */
-header {
+/* header {
     background-color:  #0059b3;
     padding: 10px 0;
     text-align: center;
     margin-bottom: 0;
  
   
-}
+} */
 
 /* Estilos generales para resetear márgenes y padding */
 * {
@@ -881,8 +874,8 @@ h2 {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  gap: 20px;
-  margin-right: 10px;
+  gap: 5px;
+  margin-right: 0px;
 }
 
 .icons-container .material-icons {
@@ -896,12 +889,22 @@ h2 {
   color: #e6b800; /* Color de hover para los íconos */
   transform: scale(1.1);
 }
+header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0059b3; /* Azul tomado del logo */
+  /* padding: 10px;  */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12); /* Añadido para estilo Material */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .encabezado {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 10px 20px;
-  background-color: #0055aa; /* Color original del header */
+  background-color: #0059b3; /* Color original del header */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  gap: 5px;
+  gap: 0px;
 }
