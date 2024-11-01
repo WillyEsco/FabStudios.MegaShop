@@ -983,7 +983,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Espacio entre el logo y el texto */
+  gap: 5px; /* Espacio entre el logo y el texto */
   flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea en pantallas pequeñas */
   margin-bottom: 20px;
 }
