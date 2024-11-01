@@ -929,14 +929,6 @@ h2 {
 .navbar-container {
   margin-bottom: 5px;
 }
-.container {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-}
-header, main, footer {
-  width: 100%;
-  max-width: 100%;
-}
+
 
 
