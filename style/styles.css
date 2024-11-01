@@ -379,6 +379,8 @@ footer {
     
 }
 
+
+
 footer img {
     height: 50px;
     margin-right: 10px; 
@@ -942,5 +944,55 @@ h2 {
   margin-bottom: 5px;
 }
 
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFD700; /* Ejemplo de color dorado en hover */
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px; /* Espacio entre los iconos */
+}
+
+.social-icons a {
+  color: white; /* Color blanco para los iconos */
+  font-size: 24px; /* Tamaño de los iconos */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FFB74D; /* Color al hacer hover */
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Espacio entre el logo y el texto */
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea en pantallas pequeñas */
+  margin-bottom: 20px;
+}
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Dos columnas */
+  justify-content: center;
+  align-items: center;
+
+}
 
 
