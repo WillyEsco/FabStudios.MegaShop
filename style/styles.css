@@ -966,6 +966,11 @@ footer {
 
 .product-card {
     flex: 1 1 calc(25% - 20px);
+    /* flex: 1 1 200px;  */
+    /* Cambia 200px al ancho mínimo de cada card */
+    max-width: 300px; 
+    /* Asegura que las cards no se extiendan en la última fila */
+
     display: flex;
     flex-direction: column;
     align-items: center;
