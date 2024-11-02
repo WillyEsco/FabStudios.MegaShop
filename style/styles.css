@@ -874,6 +874,7 @@ footer {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
+  margin-left: 20px;
 }
 
 /* Menu-icon bars */
