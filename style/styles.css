@@ -61,11 +61,11 @@
 }
 
 .search-bar button {
-    padding: 7px 20px;
+    padding: 9px 10px;
     border: none;
     background-color: #ffcc00; 
     /* Amarillo del logo */
-    color: #333;
+    /* color: #333; */
     border-radius: 0 24px 24px 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -179,7 +179,7 @@ main {
     flex-grow: 1; 
      /* Para que ocupe el espacio disponible y el footer se mantenga al final */
     padding: 5px;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -699,7 +699,7 @@ h2 {
   }
   
   /* Reducción del tamaño del h2 en móviles */
-  .nosotros-section h2 {
+  .nosotros-section h2 , .reseñas-section h2{
       font-size: 1.5em;
       margin-top: 0;
       margin-bottom: 10px;
@@ -969,10 +969,19 @@ footer {
 
 .product-grid {
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  gap: 20px; /* Espacio entre cards */
+  padding: 20px; /* Ajusta según sea necesario */
+  max-width: 100%; /* Centra la grilla en el viewport */
+}
+
+/* .product-grid {
+  display: grid;
   grid-template-rows: max-content;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   gap: 20px;
-} 
+}  */
 /* Ajusta 300px según el ancho deseado de cada card */
 
 
@@ -987,7 +996,7 @@ footer {
     flex: 1 1 calc(25% - 20px);
     /* flex: 1 1 200px;  */
     /* Cambia 200px al ancho mínimo de cada card */
-    max-width: 300px; 
+    max-width: 250px; 
     /* Asegura que las cards no se extiendan en la última fila */
     display: flex;
     flex-direction: column;
@@ -1031,8 +1040,8 @@ footer {
 
 }
 .card {
-  width: 300px; /* Ancho de la card */
-  height: 400px; /* Alto de la card */
+  width: 250px; /* Ancho de la card */
+  height: 350px; /* Alto de la card */
   border: 1px solid #ddd; /* Borde de la card */
   border-radius: 8px; /* Bordes redondeados */
   overflow: hidden; /* Oculta cualquier parte que sobresalga */
@@ -1053,4 +1062,11 @@ footer {
   height: 100%;
   object-fit: contain; /* Ajusta la imagen para cubrir el contenedor */
   background-color: #f0f0f0; /* Opcional: un color de fondo para las áreas vacías */
+}
+button span.material-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color:#0055aa
 }
