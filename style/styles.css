@@ -899,6 +899,8 @@ footer {
 
 /* Nav-links items */
 .nav-links li a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
   font-size: 1rem;
@@ -906,6 +908,11 @@ footer {
   border-radius: 4px;
   transition: background-color 0.3s;
 }
+
+.nav-links li a i {
+  margin-right: 5px; /* Espacio entre el icono y el nombre de la opción */
+}
+
 
 /* Nav-links hover effect */
 .nav-links li a:hover {
@@ -933,15 +940,88 @@ footer {
     border-radius: 5px;
   }
 
-  .nav-links li a {
-    display: block;
-    width: 100%;
-    text-align: left; /* Align text to the left */
-    padding: 20px 10;
-  }
+
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+    padding-right: 10px;
+}
 
   /* Show menu when active */
   .nav-links.active {
     display: flex;
   }
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    flex: 1 1 calc(25% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.product-card p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.btn-md3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.btn-md3-icon {
+    margin-right: 5px;
+}
+.card {
+  width: 200px; /* Ancho de la card */
+}
+
+.image-container {
+  width: 100%;
+  height: 200px; /* Alto fijo que deseas para todas las imágenes */
+  overflow: hidden; /* Oculta cualquier parte que sobresalga */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ajusta la imagen para cubrir el contenedor */
+  background-color: #f0f0f0; /* Opcional: un color de fondo para las áreas vacías */
 }
