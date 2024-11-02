@@ -179,6 +179,7 @@ main {
     flex-grow: 1; 
      /* Para que ocupe el espacio disponible y el footer se mantenga al final */
     padding: 5px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -967,8 +968,8 @@ footer {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta 200px según el ancho deseado */
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta 300px según el ancho deseado */
+  gap: 20px;
 } 
 
 
@@ -976,6 +977,7 @@ footer {
     .product-grid {
         flex-direction: column;
         align-items: center;
+        justify-items: center;
     }
 }
 .product-card {
@@ -984,7 +986,6 @@ footer {
     /* Cambia 200px al ancho mínimo de cada card */
     max-width: 300px; 
     /* Asegura que las cards no se extiendan en la última fila */
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1024,14 +1025,14 @@ footer {
 
 .btn-md3-icon {
     margin-right: 5px;
+
 }
 .card {
-  width: 200px; /* Ancho de la card */
+  width: 300px; /* Ancho de la card */
   border: 1px solid #ddd; /* Borde de la card */
   border-radius: 8px; /* Bordes redondeados */
   overflow: hidden; /* Oculta cualquier parte que sobresalga */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-
 }
 
 .image-container {
