@@ -32,16 +32,27 @@
             </div>
         </header>
         <!-- Navbar -->
-        <nav class="navbar-contenedor">
-            <ul class="navbar">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./index.html">Productos</a></li>
-                <li><a href="#" id="contact-link">Contacto</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./reseñas.html">Reseñas</a></li>
-                <li><a href="#">Mi cuenta</a></li>
-            </ul>
-        </nav>
+        <div class="headerNav">
+            <nav class="navbar">
+                <div class="menu-icon" id="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                      <li><a href="./index.html"><i class="material-icons">local_offer</i> Productos</a></li>
+
+                    <li><a href="./nosotros.html"><i class="material-icons">group</i> Nosotros</a></li>
+
+                    <li><a href="#" id="contact-link"><i class="material-icons">support_agent</i>  Contacto</a></li>
+
+                    <li><a href="#"><i class="material-icons">stars</i> Reseñas</a></li>
+
+                    <li><a href="#"><i class="material-icons">settings</i> Mi cuenta</a></li>
+
+                </ul>
+            </nav>
+        </div>    
         <!-- Main Content -->
         <main class="reseñas-section">
             <h2>Reseñas de Nuestros Clientes</h2>
@@ -220,6 +231,15 @@
                 }
             }
         });
+            // Obtener el ícono del menú y los enlaces de navegación
+            var menuIcon = document.getElementById("menu-icon");
+            var navLinks = document.getElementById("nav-links");
+
+            // Cuando el usuario hace clic en el ícono del menú, alterna la clase 'active'
+            menuIcon.onclick = function() {
+                menuIcon.classList.toggle("active");
+                navLinks.classList.toggle("active");
+            }
         </script>
 </body>
 </html>

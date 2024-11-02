@@ -15,7 +15,6 @@
 </head>
 <body>
     <div class="content">
-
     <header class="encabezado">
         <div class="logo-container">
             <img src="images/logo.png" alt="MegaShop Logo">
@@ -31,17 +30,29 @@
             <span class="material-icons">account_circle</span>
         </div>
     </header>
-            <!-- Navbar -->
-        <nav class="navbar-contenedor">
-            <ul class="navbar" >
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#" id="contact-link">Contacto</a></li> <!-- Llama al modal -->
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./reseñas.html">Reseñas</a></li>
-                <li><a href="#">Mi cuenta</a></li>
-            </ul>
-        </nav>
+ 
+    <div class="headerNav">
+            <nav class="navbar">
+                <div class="menu-icon" id="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                      <li><a href="./index.html"><i class="material-icons">local_offer</i> Productos</a></li>
+
+                    <li><a href="./nosotros.html"><i class="material-icons">group</i> Nosotros</a></li>
+
+                    <li><a href="#" id="contact-link"><i class="material-icons">support_agent</i>  Contacto</a></li>
+
+                    <li><a href="./reseñas.html"><i class="material-icons">stars</i> Reseñas</a></li>
+
+                    <li><a href="#"><i class="material-icons">settings</i> Mi cuenta</a></li>
+
+                </ul>
+            </nav>
+        </div>    
+
 <!-- Modal de contacto -->
 <div id="contactModal" class="modal">
     <div class="modal-content">
@@ -168,6 +179,15 @@
         </body>
 
 <script>
+// Navbar
+const menuIcon = document.getElementById('menu-icon');
+const navLinks = document.getElementById('nav-links');
+
+menuIcon.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+// Carrusel
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 function showNextSlide() {
