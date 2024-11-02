@@ -963,20 +963,23 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
+    align-items: around;
     gap: 20px;
 } */
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajusta 300px según el ancho deseado */
+  grid-template-rows: max-content;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
   gap: 20px;
 } 
+/* Ajusta 300px según el ancho deseado de cada card */
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
     .product-grid {
         flex-direction: column;
-        align-items: center;
+        align-items:center;
         justify-items: center;
     }
 }
@@ -1029,6 +1032,7 @@ footer {
 }
 .card {
   width: 300px; /* Ancho de la card */
+  height: 400px; /* Alto de la card */
   border: 1px solid #ddd; /* Borde de la card */
   border-radius: 8px; /* Bordes redondeados */
   overflow: hidden; /* Oculta cualquier parte que sobresalga */
@@ -1036,7 +1040,7 @@ footer {
 }
 
 .image-container {
-  width: 100%;
+  width: 200px;
   height: 200px; /* Alto fijo que deseas para todas las imágenes */
   overflow: hidden; /* Oculta cualquier parte que sobresalga */
   display: flex;
