@@ -1070,3 +1070,23 @@ button span.material-icons {
   height: 100%;
   color:#0055aa
 }
+
+.nombre-producto {
+  color: red;
+  font-weight: bold;
+  height: 60px; /* Ajusta esta altura según el tamaño de fuente */
+  display: flex;
+  margin: 0;
+  align-items: flex-start; /* Alinea el texto en la parte superior */
+  justify-content: center;
+  text-align: center;
+}
+   /* alinea top */
+
+}
+
+p .precio {
+  margin-top: 8px;
+  font-size: 1.2em;
+  color: #555;
+}
