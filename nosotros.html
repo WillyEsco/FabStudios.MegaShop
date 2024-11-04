@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MegaShop</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="styles/style.css">
     <!-- Incluye Material Icons desde Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Incluye Material Icons desde Google Fonts -->
@@ -92,7 +92,6 @@
     </div> 
     <p>En MegaShop, nos dedicamos a brindarte la mejor experiencia de compra en línea con una amplia variedad de productos de calidad. <br> ¡Descubre todo lo que tenemos para ofrecerte!</p>
   </main>
-
         <!-- Footer -->
         <footer>
             <h3>MegaShop</h3>
@@ -112,48 +111,8 @@
             </div>
             <p>&copy; 2024 MegaShop - Derechos Reservados.</p>           
             </div>   
-    
         </footer>
-<script>
-// Navbar
-const menuIcon = document.getElementById('menu-icon');
-const navLinks = document.getElementById('nav-links');
-
-menuIcon.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-function showNextSlide() {
-    slides[currentSlide].classList.remove('active'); // Ocultar la diapositiva actual
-    currentSlide = (currentSlide + 1) % slides.length; // Mover a la siguiente
-    slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
-}
-// Cambiar la diapositiva cada 3 segundos
-setInterval(showNextSlide, 3000);
-
-// Obtener el modal y el enlace de contacto
-var modal = document.getElementById("contactModal");
-var contactLink = document.getElementById("contact-link");
-var span = document.getElementsByClassName("close")[0];
-
-// Al hacer clic en "Contacto", mostrar el modal
-contactLink.onclick = function() {
-    modal.style.display = "flex";
-}
-
-// Al hacer clic en la "X", cerrar el modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Al hacer clic fuera del modal, cerrar el modal
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script>
+<script src="./scripts/library.js"></script>
 </div>
 </body>
 </html>

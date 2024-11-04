@@ -1,0 +1,109 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  background-color:#0059b3;
+  color: white;
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Menu-icon (hamburguesa) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  margin-left: 25px;
+}
+
+/* Menu-icon bars */
+.menu-icon span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Nav-links */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Nav-links items */
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-links li a i {
+  margin-right: 5px; /* Espacio entre el icono y el nombre de la opción */
+}
+
+
+/* Nav-links hover effect */
+.nav-links li a:hover {
+  background-color: #79a3cd;
+}
+
+/* Responsive for burger menu */
+@media (max-width: 700px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0px;
+    position: absolute;
+    top: 25px;
+    left: 0; /* Align to the left */
+    width: 150px;
+    background-color: #0059b3;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+    border-bottom: #6200ea;
+    border-radius: 5px;
+  }
+
+
+
+.nav-links a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px;
+    padding-right: 10px;
+}
+
+  /* Show menu when active */
+  .nav-links.active {
+    display: flex;
+  }
+}

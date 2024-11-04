@@ -1,0 +1,212 @@
+/* Estilos generales para el modal */
+.modal {
+    display: none;
+    position: fixed;
+ 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* otros estilos */
+ 
+    z-index: 10;
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    /* Fondo semi-transparente */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: azure;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos de Material Design para los campos del formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .modal-body input,
+  .modal-body textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  .modal-body button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+    /* Media Query para pantallas pequeñas (hasta 600px) */
+    @media screen and (max-width: 600px) {
+    .modal-content {
+      width: 95%; 
+      /* Ajusto el ancho para pantallas más pequeñas */
+    }
+  
+    .modal-header .logo,
+    .modal-header .mascota {
+      width: 80px; 
+      /* Reduzco el tamaño del logo y la mascota en pantallas pequeñas */
+    }
+  
+    .modal-body input,
+    .modal-body textarea {
+      padding: 10px; 
+      /* Reduzco el padding para que el form sea más compacto */
+      font-size: 0.9rem; 
+      /* Ajusto el tamaño del texto */
+    }
+  
+    .modal-body button {
+      padding: 10px; 
+      /* Ajusto el tamaño del botón */
+      font-size: 1rem; 
+      /* Reduzco el tamaño del texto en el botón */
+    }
+
+/* ---------------------------- */
+.modal-header {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 10px; */
+  }
+  
+  .modal-header .logo {
+    width: 80px;
+    /* width: 60px;
+    height: auto; */
+  }
+  
+  .modal-header .mascota {
+    width: 80px;
+    /* height: auto; */
+  }
+  @media (max-width: 600px){
+
+      .modal-header .mascota {
+        display: none;
+        /* height: auto; */
+      }
+    }
+  }
+
+/* ---------------------------- */   
+  
+  
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    box-shadow: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #6200ea; 
+    /* Color del branding */
+}
+
+.mdc-button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mdc-button:hover {
+    background-color: #ff4500;
+}
+/* Estilo del botón */
+/* Estilo del botón */
+.mdc-button--raised {
+    background-color: #ff9800;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex; /* Flexbox para alinear el texto y el icono */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+  }
+  
+  .mdc-button--raised i {
+    margin-left: 8px; 
+    /* Espacio entre el texto y el icono */
+  }
+  
+  .mdc-button--raised:hover {
+    background-color: #e68a00;
+  }
+  .modal-header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  
+  .modal-header .logo {
+    max-width: 60px;
+    height: auto;
+
+  }
+  
+  .modal-header .mascota {
+    max-width: 100px;
+    height: auto;
+
+  }

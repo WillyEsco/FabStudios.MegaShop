@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MegaShop - Reseñas</title>
-    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="styles/style.css">
     <!-- Incluye Material Icons desde Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Incluye Material Icons desde Google Fonts -->
@@ -140,47 +140,32 @@
                 </div>
             </div>
         </main>
-            <!-- Modal de Contacto -->
-            <!-- <div id="contact-modal" class="modal">
-                            <div class="modal-content">
-                                <span class="close">&times;</span>
-                                <h2>Contacto</h2>
-                                <form>
-                                    <label for="name">Nombre:</label>
-                                    <input type="text" id="name" name="name" required>
-                                    <label for="email">Correo Electrónico:</label>
-                                    <input type="email" id="email" name="email" required>
-                                    <label for="message">Mensaje:</label>
-                                    <textarea id="message" name="message" required></textarea>
-                                    <button type="submit">Enviar</button>
-                                </form>
-                            </div>
-                  </div> -->
-            <div id="contact-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <div class="modal-header">
-                        <img src="./images/logo.png" alt="MegaShop Logo" class="logo">
-                        <h2>Contacto</h2>
-                        <img src="./images/mascota1-frente.png" alt="Mascota frente 1 MegaShop" class="mascota">
-                      </div>
-                    <form action="https://formspree.io/f/xzzbzzge" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required placeholder="Ingresa tu Nombre...">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required placeholder="tu e-Mail...">
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" required placeholder="y tu sugerencia para MegaShop..."></textarea>
-                        </div>
-            
-                        <button type="submit" class="mdc-button mdc-button--raised">
-                            ENVIAR <i class="material-icons">send</i>
-                        </button>
-                    </form>
-                </div>
+ <!-- Modal de contacto -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-header">
+            <img src="./images/logo.png" alt="MegaShop Logo" class="logo">
+            <h2>Contacto</h2>
+            <img src="./images/mascota1-frente.png" alt="Mascota frente 1 MegaShop" class="mascota">
+        </div>
+        <form action="https://formspree.io/f/xzzbzzge" method="POST">
+            <div class="form-group">
+                <input type="text" id="name" name="name" required placeholder="Ingresa tu Nombre...">
             </div>
+            <div class="form-group">
+                <input type="email" id="email" name="email" required placeholder="tu e-Mail...">
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" required placeholder="y tu sugerencia para MegaShop..."></textarea>
+            </div>
+
+            <button type="submit" class="mdc-button mdc-button--raised">
+                ENVIAR <i class="material-icons">send</i>
+            </button>
+        </form>
+    </div>
+</div>
         <!-- Footer -->
         <footer>
             <h3>MegaShop</h3>
@@ -200,46 +185,9 @@
             </div>
             <p>&copy; 2024 MegaShop - Derechos Reservados.</p>           
             </div>   
-    
         </footer>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            // Obtener el modal
-            var modal = document.getElementById("contact-modal");
-    
-            // Obtener el botón que abre el modal
-            var btn = document.getElementById("contact-link");
-    
-            // Obtener el <span> que cierra el modal
-            var span = document.getElementsByClassName("close")[0];
-    
-            // Cuando el usuario hace clic en el botón, abre el modal
-            btn.onclick = function() {
-                modal.style.display = "block";
-            }
-    
-            // Cuando el usuario hace clic en <span> (x), cierra el modal
-            span.onclick = function() {
-                modal.style.display = "none";
-            }
-    
-            // Cuando el usuario hace clic en cualquier lugar fuera del modal, lo cierra
-            window.onclick = function(event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        });
-            // Obtener el ícono del menú y los enlaces de navegación
-            var menuIcon = document.getElementById("menu-icon");
-            var navLinks = document.getElementById("nav-links");
-
-            // Cuando el usuario hace clic en el ícono del menú, alterna la clase 'active'
-            menuIcon.onclick = function() {
-                menuIcon.classList.toggle("active");
-                navLinks.classList.toggle("active");
-            }
-        </script>
+    <script src="./scripts/library.js"></script>
+    </div> 
 </body>
 </html>

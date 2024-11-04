@@ -1,0 +1,107 @@
+  /* Sección Nosotros */
+  .nosotros-section {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+    max-width: 100%;
+
+  }
+  
+  .video-container {
+    margin: 5px 0;
+  }
+/* Contenedor principal que ocupa el viewport */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+/* Estilos generales */
+h2 {
+    font-size: 2em; /* Tamaño estándar para escritorio */
+  }
+  @media (max-width: 915px) {
+    h2 {
+      font-size: 1.5em; /* Reduce el tamaño del h2 para tablets */
+    }
+    .modal-title {
+      font-size: 1.8rem; /* Ajusta el tamaño a tu preferencia */
+    }
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  /* Ajustes para tablets (pantallas medianas) */
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.5em; /* Reduce el tamaño del h2 para tablets */
+    }
+    .modal-title {
+      font-size: 1.8rem; /* Ajusta el tamaño a tu preferencia */
+    }
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.2em; /* Reduce el tamaño del h2 aún más para móviles */
+      .modal-title {
+        font-size: 1.5rem; /* Ajusta el tamaño a tu preferencia */
+      }
+    }
+  
+    iframe {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+    }
+  }
+  /* Estilo general para la sección */
+.nosotros-section {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+  .nosotros-section {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 100%;
+      max-width: 100%;
+  }
+  
+  /* Reducción del tamaño del h2 en móviles */
+  .nosotros-section h2 , .reseñas-section h2{
+      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: 10px;
+      width: 100%;
+      max-width: 100%;
+  }
+
+  /* Ajuste del iframe del video para ocupar el ancho del contenedor */
+  .nosotros-section iframe {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 16 / 9;
+  }
+}

@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MegaShop</title>
-    <link rel="stylesheet" href="style/styles.css">
+
+    <link rel="stylesheet" href="styles/estructura.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/productos.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
     <!-- Incluye Material Icons desde Font Awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Incluye Material Icons desde Google Fonts -->
@@ -79,6 +86,7 @@
         </form>
     </div>
 </div>
+
     <!-- Carrusel -->
     <section class="carousel">
         <div class="mascot">
@@ -94,6 +102,7 @@
             <p><b>Envío gratis en compras mayores a $100</b></p>
         </div>
     </section>
+
     <!-- Sección de productos -->
     <main>
         <div class="Prod-Dest-header">
@@ -107,8 +116,8 @@
                     <img src="./images/prod/1.png" alt="Producto 1">
                 </div>
                 <div class="card-content">
-                    <h3>Adorno para Cama</h3>
-                    <p>$25.99</p>
+                    <h3 class="nombre-producto">Tope de Cama <br> Mickey Mouse</h3>
+                    <p class="precio">$25.99</p>
                     <button class="btn-md3">
                         <span class="btn-md3-icon">
                             <i class="material-icons">shopping_cart</i>
@@ -122,29 +131,29 @@
                 <img src="./images/prod/21.png" alt="Producto 2">
                 </div>
                 <div class="card-content">
-                    <h3>Adorno de jardín</h3>
-                    <p>$15.49</p>
+                    <h3 class="nombre-producto">Disney´s Welcome Garden</h3>
+                    <p class="precio">$25.99</p>
                     <button class="btn-md3">
                         <span class="btn-md3-icon">
                             <i class="material-icons">shopping_cart</i>
                         </span>
                         Comprar ahora
-                    </button>
-                    </div>
+                    </button>                            
+                </div>
             </div>
             <div class="product-card">
             <div class="image-container">
             <img src="./images/prod/3.png" alt="Producto 3">
             </div>
             <div class="card-content">
-                <h3>Freidora de Aire</h3>
-                <p>$40.00</p>
+                <h3 class="nombre-producto">Disney's Air Fryer</h3>
+                <p class="precio">$25.99</p>
                 <button class="btn-md3">
                     <span class="btn-md3-icon">
                         <i class="material-icons">shopping_cart</i>
                     </span>
                     Comprar ahora
-                </button>
+                </button>                            
             </div>
         </div>
         <div class="product-card">
@@ -152,14 +161,14 @@
             <img src="./images/prod/4.png" alt="Producto 4">
             </div>
             <div class="card-content">
-                <h3>Tablas de Cocina</h3>
-                <p>$30.99</p>
+                <h3 class="nombre-producto">Disney Cooking Tables</h3>
+                <p class="precio">$25.99</p>
                 <button class="btn-md3">
                     <span class="btn-md3-icon">
                         <i class="material-icons">shopping_cart</i>
                     </span>
                     Comprar ahora
-                </button>
+                </button>                            
             </div>
         </div>
 
@@ -168,14 +177,14 @@
         <img src="./images/prod/5.png" alt="Producto 5">
         </div>
         <div class="card-content">
-            <h3>Batería de Cocina</h3>
-            <p>$20.00</p>
+            <h3 class="nombre-producto">Mickey Mouse Cookware</h3>
+            <p class="precio">$25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
                     <i class="material-icons">shopping_cart</i>
                 </span>
                 Comprar ahora
-            </button>
+            </button>                            
         </div>
         </div>  
         <div class="product-card">
@@ -183,14 +192,14 @@
         <img src="./images/prod/6.png" alt="Producto 5">
         </div>
         <div class="card-content">
-            <h3>Apoyador de Celular</h3>
-            <p>$20.00</p>
+            <h3 class="nombre-producto">Cell Phone Holder</h3>
+            <p class="precio">$25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
                     <i class="material-icons">shopping_cart</i>
                 </span>
                 Comprar ahora
-            </button>
+            </button>                            
         </div>
         </div>  
         <div class="product-card">
@@ -198,14 +207,14 @@
         <img src="./images/prod/7.png" alt="Producto 5">
         </div>
         <div class="card-content">
-            <h3>Disney's KitchenAid</h3>
-            <p>$20.00</p>
+            <h3 class="nombre-producto">Disney's KitchenAid</h3>
+            <p class="precio">$25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
                     <i class="material-icons">shopping_cart</i>
                 </span>
                 Comprar ahora
-            </button>
+            </button>                            
         </div>
         </div>  
         <div class="product-card">
@@ -213,74 +222,77 @@
         <img src="./images/prod/8.png" alt="Producto 5">
         </div>
         <div class="card-content">
-            <h3>Set de Cacerolas</h3>
-            <p>$20.00</p>
+            <h3 class="nombre-producto">Set of Pans</h3>
+            <p class="precio">$25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
                     <i class="material-icons">shopping_cart</i>
                 </span>
                 Comprar ahora
-            </button>
+            </button>                            
         </div>
         </div>  
+
         <div class="product-card">
         <div class="image-container">
-        <img src="./images/prod/9.png" alt="Producto 5">
+            <img src="./images/prod/9.png" alt="Producto 5">
         </div>
         <div class="card-content">
-            <h3>Set de Tasas</h3>
-            <p>$20.00</p>
+            <h3 class="nombre-producto">Disney Gang Fees</h3>
+            <p class="precio">$25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
                     <i class="material-icons">shopping_cart</i>
                 </span>
                 Comprar ahora
-            </button>
+            </button>                            
         </div>
         </div>  
+
         <div class="product-card">
         <div class="image-container">
-        <img src="./images/prod/16.png" alt="Producto 5">
+            <img src="./images/prod/16.png" alt="Producto 5">
         </div>
         <div class="card-content">
-            <h3>Tostadora</h3>
-            <p>$20.00</p>
+            <h3 class="nombre-producto">Mickey Mouse Bread Toaster</h3>
+            <p class="precio">$25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
                     <i class="material-icons">shopping_cart</i>
                 </span>
                 Comprar ahora
-            </button>
+            </button>                            
         </div>
         </div>  
+
         <div class="product-card">
             <div class="image-container">
-            <img src="./images/prod/10.png" alt="Producto 5">
+                <img src="./images/prod/10.png" alt="Producto 5">
             </div>
             <div class="card-content">
-                <h3>Velador</h3>
-                <p>$20.00</p>
-                <button class="btn-md3">
-                    <span class="btn-md3-icon">
-                        <i class="material-icons">shopping_cart</i>
-                    </span>
-                    Comprar ahora
-                </button>
+            <h3 class="nombre-producto">Mickey Mouse <br> Night Lamp</h3>
+            <p class="precio">$25.99</p>
+            <button class="btn-md3">
+                <span class="btn-md3-icon">
+                    <i class="material-icons">shopping_cart</i>
+                </span>
+                Comprar ahora
+            </button>
             </div>
             </div>  
             <div class="product-card">
                 <div class="image-container">
-                <img src="./images/prod/11.png" alt="Producto 5">
+                    <img src="./images/prod/11.png" alt="Producto 5">
                 </div>
                 <div class="card-content">
-                    <h3>Waflera</h3>
-                    <p>$20.00</p>
+                    <h3 class="nombre-producto">Disney Waffle Iron</h3>
+                    <p class="precio">$25.99</p>
                     <button class="btn-md3">
                         <span class="btn-md3-icon">
                             <i class="material-icons">shopping_cart</i>
                         </span>
                         Comprar ahora
-                    </button>
+                    </button>                            
                 </div>
                 </div>  
                 <div class="product-card">
@@ -288,14 +300,14 @@
                     <img src="./images/prod/12.png" alt="Producto 5">
                     </div>
                     <div class="card-content">
-                        <h3>Cafetera Express</h3>
-                        <p>$20.00</p>
+                        <h3 class="nombre-producto">Mickey Mouse Express Coffee Maker</h3>
+                        <p class="precio">$25.99</p>
                         <button class="btn-md3">
                             <span class="btn-md3-icon">
                                 <i class="material-icons">shopping_cart</i>
                             </span>
                             Comprar ahora
-                        </button>
+                        </button>                            
                     </div>
                     </div>  
                     <div class="product-card">
@@ -303,14 +315,14 @@
                     <img src="./images/prod/13.png" alt="Producto 5">
                     </div>
                     <div class="card-content">
-                        <h3>Carrier Set</h3>
-                        <p>$20.00</p>
+                        <h3 class="nombre-producto">Carry on Suitcase set</h3>
+                        <p class="precio">$25.99</p>
                         <button class="btn-md3">
                             <span class="btn-md3-icon">
                                 <i class="material-icons">shopping_cart</i>
                             </span>
                             Comprar ahora
-                        </button>
+                        </button>                            
                     </div>
                     </div>  
                     <div class="product-card">
@@ -318,14 +330,14 @@
                         <img src="./images/prod/17.png" alt="Producto 5">
                         </div>
                         <div class="card-content">
-                            <h3>Velador Mickey Mouse</h3>
-                            <p>$20.00</p>
+                            <h3 class="nombre-producto">Mickey Night Lamp 100 Years Celebration</h3>
+                            <p class="precio">$25.99</p>
                             <button class="btn-md3">
                                 <span class="btn-md3-icon">
                                     <i class="material-icons">shopping_cart</i>
                                 </span>
                                 Comprar ahora
-                            </button>
+                            </button>                            
                         </div>
                         </div>  
                         <div class="product-card">
@@ -333,29 +345,29 @@
                             <img src="./images/prod/18.png" alt="Producto 5">
                             </div>
                             <div class="card-content">
-                                <h3>Breakfast Set</h3>
-                                <p>$20.00</p>
+                                <h3 class="nombre-producto">Disney Breakfast Set</h3>
+                                <p class="precio">$25.99</p>
                                 <button class="btn-md3">
                                     <span class="btn-md3-icon">
                                         <i class="material-icons">shopping_cart</i>
                                     </span>
                                     Comprar ahora
-                                </button>
+                                </button>                            
                             </div>
                             </div>  
                             <div class="product-card">
-                                <div class="image-container">
-                                <img src="./images/prod/19.png" alt="Producto 5">
-                                </div>
                                 <div class="card-content">
-                                    <h3>Horno Eléctrico</h3>
-                                    <p>$20.00</p>
+                                    <div class="image-container">
+                                        <img src="./images/prod/19.png" alt="Producto 5">
+                                    </div>
+                                    <h3 class="nombre-producto">Mickey and Minnie Electric Owen</h3>
+                                    <p class="precio">$25.99</p>
                                     <button class="btn-md3">
                                         <span class="btn-md3-icon">
                                             <i class="material-icons">shopping_cart</i>
                                         </span>
                                         Comprar ahora
-                                    </button>
+                                    </button>                            
                                 </div>
                                 </div>  
                                 <div class="product-card">
@@ -363,14 +375,14 @@
                                     <img src="./images/prod/20.png" alt="Producto 5">
                                     </div>
                                     <div class="card-content">
-                                        <h3>Pisa Papeles</h3>
-                                        <p>$20.00</p>
+                                        <h3 class="nombre-producto">Mickey In Love Paperweight</h3>
+                                        <p class="precio">$25.99</p>
                                         <button class="btn-md3">
                                             <span class="btn-md3-icon">
                                                 <i class="material-icons">shopping_cart</i>
                                             </span>
                                             Comprar ahora
-                                        </button>
+                                        </button>                            
                                     </div>
                                     </div>  
             </div>  
@@ -403,49 +415,7 @@
         <div>
         </body>
 
-<script>
-// Navbar
-const menuIcon = document.getElementById('menu-icon');
-const navLinks = document.getElementById('nav-links');
-
-menuIcon.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-// Carrusel
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-function showNextSlide() {
-    slides[currentSlide].classList.remove('active'); // Ocultar la diapositiva actual
-    currentSlide = (currentSlide + 1) % slides.length; // Mover a la siguiente
-    slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
-}
-// Cambiar la diapositiva cada 3 segundos
-setInterval(showNextSlide, 3000);
-
-// Obtener el modal y el enlace de contacto
-var modal = document.getElementById("contactModal");
-var contactLink = document.getElementById("contact-link");
-var span = document.getElementsByClassName("close")[0];
-
-// Al hacer clic en "Contacto", mostrar el modal
-contactLink.onclick = function() {
-    modal.style.display = "flex";
-}
-
-// Al hacer clic en la "X", cerrar el modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Al hacer clic fuera del modal, cerrar el modal
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-</script>
+        <script src="./scripts/library.js"></script>
 </div>
 </body>
 </html>

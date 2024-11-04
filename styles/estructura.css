@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ body {
+    /* font-family: 'Arial', sans-serif; */
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+  h2 {
+    text-align: center;
+    color: #0059b3; 
+    /* Azul del logo */
+    font-size: 2.5rem;    
+    margin-bottom: 0px;
+  }
+  .searchbar {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    justify-self: center;
+  
+  }
+  
+  .searchbar .form-control {
+    border-radius: 50px 0 0 50px;
+    border-right: none;
+  }
+
+.content {
+    flex: 1;
+  }
+  .searchbar .btn {
+    border-radius: 0 50px 50px 0;
+  }
+
+.carousel {
+    padding-left: 10px; 
+    /* Agrega espacio a la izquierda del logo */
+}
+
+
+.logo-container img {
+    max-height: 70px;
+    /* margin-left: 20px; */
+    padding-left: 0; 
+    padding-right: 10px;
+    /* Agrega espacio a la izquierda del logo */
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+
+.search-bar input {
+    /* padding: 10px; */
+    padding-left: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.12); 
+    /* Borde estilo Material */
+    border-radius: 24px 0 0 24px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar button {
+    padding: 9px 10px;
+    border: none;
+    background-color: #ffcc00; 
+    /* Amarillo del logo */
+    /* color: #333; */
+    border-radius: 0 24px 24px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);   
+    margin-right: 10px; /* Agrega espacio a la derecha del botón */
+}
+
+.search-bar button:hover {
+    background-color: #e6b800; 
+    /* Más oscuro en hover */
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.icons-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin-right: 0px;
+}
+
+.icons-container .material-icons {
+  font-size: 24px;
+  color: #fff; /* Color blanco para los íconos */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons-container .material-icons:hover {
+  color: #e6b800; /* Color de hover para los íconos */
+  transform: scale(1.1);
+}
+header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0059b3; /* Azul tomado del logo */
+  /* padding: 10px;  */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12); /* Añadido para estilo Material */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 10px 20px 0px 10px;
+  background-color: #0059b3; /* Color original del header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  gap: 0px;
+}
+/* -------- */
+
+
+/* Carrusel */
+.carousel {
+    background-color: #ff453a; 
+    /* Rojo del logo */
+    color: white;
+    text-align: center;
+    padding: 30px 5px 0;
+    margin: 5px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    position: relative;
+    height: 180px; 
+    /* Aumentamos la altura */
+    overflow: hidden;
+}
+
+.mascot {
+    position: relative;
+    text-align: left;
+    /* top: 0;
+    left: 0; */
+    z-index: 5; 
+    /* Para asegurarse de que esté encima de las slides */
+    height: 90%; 
+    /* Asegura que la imagen ocupe todo el alto del carrusel */
+    width: auto; 
+    /* Mantener proporción */
+}
+
+.mascot img {
+    max-height: 90%; 
+    /* Escalar la imagen dentro del contenedor */
+    width: auto;
+}
+
+.slide {
+    /* font-family: Arial, sans-serif; */
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide.active {
+    opacity: 1;
+}

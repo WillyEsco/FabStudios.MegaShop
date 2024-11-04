@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+  footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+
+
+/* Estilos para el Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #0059b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+
+    /* display: flex; */
+    align-items: center;  
+    /* Alinea el contenido verticalmente al centro */
+    /* justify-content: center; Centra horizontalmente */
+    padding: 10px;
+    /* background-color: #004080; */
+    color: white;
+    
+}
+
+
+
+footer img {
+    height: 60px;
+    margin-right: 5px; 
+    /* Espacio entre el logo y el texto */
+}
+
+/* Estilos para el footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0055aa; /* Cambia esto al color de fondo de tu elección */
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+
+footer p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  line-height: 1;
+}
+h2 {
+  text-align: center;
+  color: #0059b3; 
+  /* Azul del logo */
+  font-size: 2.5rem;    
+  margin-bottom: 0px;
+}
+
+/* Estilos para el modal */
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #FFD700; /* Ejemplo de color dorado en hover */
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px; /* Espacio entre los iconos */
+}
+
+.social-icons a {
+  color: white; /* Color blanco para los iconos */
+  font-size: 24px; /* Tamaño de los iconos */
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #FFB74D; /* Color al hacer hover */
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px; /* Espacio entre el logo y el texto */
+  flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea en pantallas pequeñas */
+  margin-bottom: 20px;
+}
+footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Dos columnas */
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

@@ -1,0 +1,317 @@
+
+/* Estilos de productos */
+main {
+    flex-grow: 1; 
+     /* Para que ocupe el espacio disponible y el footer se mantenga al final */
+    padding: 5px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2 {
+    text-align: center;
+    color: #0059b3; 
+    /* Azul del logo */
+    font-size: 2.5rem;    
+    margin-bottom: 0px;
+}
+/* Estilos para productos */
+#productos {
+    width: 100%;
+    /* padding: 20px; */
+    margin-bottom: 10px;
+    margin-top: 10px;
+    /*  Agrega espacio debajo de los productos */
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 12px; 
+    /* Material Design Border Radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); 
+    /* Material Design Shadow */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    height: auto;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px;
+    color: #ff453a; 
+    /* Rojo del logo */
+    font-size: 1.2rem;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+.product-card button {
+    background-color: #ff9800;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #e68900;
+    cursor: pointer;
+}
+/* Estilos básicos para reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/* Botones estilo Material Design 3 */
+.btn-md3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    background-color: #ff6f00; 
+    /* Color de fondo vibrante */
+    color: #fff; 
+    /* Color del texto */
+    border: none;
+    border-radius: 30px !important ;
+    /* Esquinas redondeadas */
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: none; 
+    /* Sin sombra o muy sutil */
+    transition: background-color 0.3s ease, box-shadow 0.2s ease; /* Animación */
+}
+
+.btn-md3:hover {
+    background-color: #ff8f00; 
+    /* Color más claro al hacer hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    /* Elevación al hacer hover */
+}
+
+.btn-md3:active {
+    background-color: #e65100; 
+    /* Color más oscuro al hacer click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    /* Sombra más pequeña */
+}
+
+.btn-md3-icon {
+    margin-right: 8px; 
+    /* Espacio entre el icono y el texto */
+}
+
+/* Botón para la search bar */
+.search-btn {
+    background-color: #ff6f00;
+    padding: 10px 20px;
+    border-radius: 50px; 
+    /* Borde más redondeado para un look moderno */
+    color: white;
+    border: none;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-btn:hover {
+    background-color: #ff8f00;
+    transform: translateY(-2px); 
+    /* Pequeño movimiento al hover */
+}
+
+.search-btn:active {
+    background-color: #e65100;
+    transform: translateY(0); 
+    /* Vuelve al lugar original al click */
+}
+.Prod-Dest-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3px;
+    line-height: 1;
+  }
+  .Prod-Dest-header .mascota {
+    width: 120px;
+    height: auto;
+  }
+  @media (max-width: 600px) {
+    .Prod-Dest-header {
+      flex-direction: column;
+      text-align: center;
+      }
+      .carousel p {
+        font-size: 1.4rem; 
+        /* Leyenda del carrousel para celulares de pantallas chicas */
+
+    }
+    }
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        justify-content: center;
+        gap: 20px; /* Espacio entre cards */
+        padding: 20px; /* Ajusta según sea necesario */
+        max-width: 100%; /* Centra la grilla en el viewport */
+      }
+      
+      /* .product-grid {
+        display: grid;
+        grid-template-rows: max-content;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+        gap: 20px;
+      }  */
+      /* Ajusta 300px según el ancho deseado de cada card */
+      
+      
+      @media (max-width: 700px) {
+          .product-grid {
+              flex-direction: column;
+              align-items:center;
+              justify-items: center;
+          }
+      }
+      .product-card {
+          flex: 1 1 calc(25% - 20px);
+          /* flex: 1 1 200px;  */
+          /* Cambia 200px al ancho mínimo de cada card */
+          max-width: 250px; 
+          /* Asegura que las cards no se extiendan en la última fila */
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          border: 1px solid #ddd;
+          padding: 20px;
+          box-sizing: border-box;
+      }
+      
+      .product-card img {
+          max-width: 100%;
+          height: auto;
+      }
+      
+      .product-card h3 {
+          margin: 10px 0;
+          font-size: 1.2em;
+      }
+      
+      .product-card p {
+          margin: 10px 0;
+          font-size: 1em;
+          color: #333;
+      }
+      
+      .btn-md3 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 20px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          cursor: pointer;
+          margin-top: auto;
+      }
+      
+      .btn-md3-icon {
+          margin-right: 5px;
+      
+      }
+      .card {
+        width: 250px; /* Ancho de la card */
+        height: 350px; /* Alto de la card */
+        border: 1px solid #ddd; /* Borde de la card */
+        border-radius: 8px; /* Bordes redondeados */
+        overflow: hidden; /* Oculta cualquier parte que sobresalga */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      }
+      
+      .image-container {
+        width: 200px;
+        height: 200px; /* Alto fijo que deseas para todas las imágenes */
+        overflow: hidden; /* Oculta cualquier parte que sobresalga */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ajusta la imagen para cubrir el contenedor */
+        background-color: #f0f0f0; /* Opcional: un color de fondo para las áreas vacías */
+      }
+      button span.material-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color:#0055aa
+      }
+      
+      .nombre-producto {
+        color: red;
+        font-weight: bold;
+        height: 60px; /* Ajusta esta altura según el tamaño de fuente */
+        display: flex;
+        margin: 0;
+        align-items: flex-start; /* Alinea el texto en la parte superior */
+        justify-content: center;
+        text-align: center;
+      }
+         /* alinea top */
+      
+      p .precio {
+        margin-top: 8px;
+        font-size: 1.2em;
+        color: #555;
+      }
+      

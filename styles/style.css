@@ -119,7 +119,7 @@ header {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 10px 20px 0px 20px;
+  padding: 10px 20px 0px 10px;
   background-color: #0059b3; /* Color original del header */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 0px;
@@ -382,9 +382,14 @@ footer img {
 .modal {
     display: none;
     position: fixed;
+ 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* otros estilos */
+ 
     z-index: 10;
-    left: 0;
-    top: 0;
+
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7); 
@@ -875,7 +880,7 @@ footer {
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 /* Menu-icon bars */
