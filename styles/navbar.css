@@ -13,9 +13,12 @@
   z-index: 10;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 5px;
+  padding: 1px 1px;
   position: relative;
   margin: 0 auto;
+  
+  /* // ubicacion centrada */
+
 }
 
 /* Menu-icon (hamburguesa) */
@@ -24,7 +27,7 @@
   flex-direction: column;
   cursor: pointer;
   gap: 4px;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 
 /* Menu-icon bars */
@@ -67,7 +70,10 @@
 /* Nav-links hover effect */
 .nav-links li a:hover {
   background-color: #79a3cd;
+  border-radius: 10px;
+
 }
+
 
 /* Responsive for burger menu */
 @media (max-width: 700px) {
