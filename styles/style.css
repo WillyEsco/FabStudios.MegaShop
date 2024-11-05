@@ -988,7 +988,20 @@ footer {
   gap: 20px;
 }  */
 /* Ajusta 300px según el ancho deseado de cada card */
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: around;
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+}
 
 @media (max-width: 700px) {
     .product-grid {

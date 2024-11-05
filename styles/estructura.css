@@ -140,16 +140,14 @@ header {
 /* Carrusel */
 .carousel {
     background-color: #ff453a; 
-    /* Rojo del logo */
     color: white;
     text-align: center;
     padding: 30px 5px 0;
     margin: 5px 0;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-    position: relative;
-    height: 180px; 
-    /* Aumentamos la altura */
+    position: relative;  
+    height: 180px;   
     overflow: hidden;
 }
 
