@@ -22,7 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="content">
+<div class="content">
     <header class="encabezado">
         <div class="logo-container">
             <img src="images/logo.png" alt="MegaShop Logo">
@@ -37,8 +37,9 @@
             <span class="material-icons">shopping_cart</span>
             <span class="material-icons">account_circle</span>
         </div>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-5Mh9HXj2+cFblI74rR0uZrmXShfpPZpgz0I4YfbAcNkVP40/48MOYwEW6AD7eLg5" crossorigin="anonymous">
     </header>
- 
+
     <div class="headerNav">
             <nav class="navbar">
                 <div class="menu-icon" id="menu-icon">
@@ -48,19 +49,14 @@
                 </div>
                 <ul class="nav-links" id="nav-links">
                       <li><a href="./index.html"><i class="material-icons">local_offer</i> Productos</a></li>
-
                     <li><a href="./nosotros.html"><i class="material-icons">group</i> Nosotros</a></li>
-
                     <li><a href="#" id="contact-link"><i class="material-icons">support_agent</i>  Contacto</a></li>
-
                     <li><a href="./reseñas.html"><i class="material-icons">stars</i> Reseñas</a></li>
-
                     <li><a href="#"><i class="material-icons">settings</i> Mi cuenta</a></li>
-
                 </ul>
             </nav>
-        </div>    
-
+    </div>
+  
 <!-- Modal de contacto -->
 <div id="contactModal" class="modal">
     <div class="modal-content">
@@ -87,32 +83,32 @@
         </form>
     </div>
 </div>
-
-    <!-- Carrusel -->
-    <section class="carousel">
-
-        <div class="slide">
-            <div class="carousel-item">
-                <img src="./images/carrusel/banner1bisRoby.webp" class="d-block w-100" alt="Banner 1">
-            </div>
-            <!-- <p>  <b>Descuento del 50% en productos bseleccionados</b>  </p> -->
-        </div>
-        <div class="slide">
-            <div class="carousel-item">
-                <img src="./images/carrusel/banner2bis.webp" class="d-block w-100" alt="Banner 2">
-            </div>
-            <!-- <p><b>Nuevas colecciones de primavera</b></p> -->
-        </div>
-        <div class="slide">
-            <div class="carousel-item">
-                <img src="./images/carrusel/banner3bis.webp" class="d-block w-100" alt="Banner 3">
-            </div>
-            <!-- <p><b>Envío gratis en compras mayores a $100</b></p> -->
-        </div>
-    </section>
-
     <!-- Sección de productos -->
-    <main>
+
+          <!-- Carrusel -->
+          <section id="carouselBanner" class="carousel slide mb-4" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/carrusel/banner1.webp" class="d-block w-100" alt="Banner 1">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carrusel/banner2.webp" class="d-block w-100" alt="Banner 2">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carrusel/banner3.webp" class="d-block w-100" alt="Banner 3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBanner" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBanner" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+        
+        </section>
+        <main>
         <div class="Prod-Dest-header">
             <h2><b>Productos destacados</b></h2>
             <img src="./images/mascota1-frente.png" alt="Mascota frente 2 MegaShop" width="15%" class="mascota">
@@ -392,12 +388,11 @@
                                             Comprar ahora
                                         </button>                            
                                     </div>
-                                    </div>  
+                                </div>  
             </div>  
             <!-- "product-grid"                -->
             </section>
 
- 
 </main>
         <!-- Footer -->
         <footer>
@@ -411,16 +406,22 @@
                 <a href="https://telegram.org" target="_blank"><i class="fab fa-telegram-plane"></i></a>
                 <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
+
             <div class="footer-content">
             <div class="fabStudios">
                 <a href="#"><img src="./images/fabStudios.png" alt="FabStudios" ></a>
             </div>
             <p>&copy; 2024 MegaShop - Derechos Reservados.</p>           
             </div>   
+    
         </footer>
-        <div>
-        </body>
+<div>
+</body>
+
         <script src="./scripts/library.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-tiny+6ysfD5yJ8/l8Vjy9z4K5P13d8uEzHZlRF1Hq1LdeucVz71vvXh5FFU/Mxm5" crossorigin="anonymous"></script>
+
+
 </div>
 </body>
 </html>

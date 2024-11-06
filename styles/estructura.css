@@ -139,17 +139,33 @@ header {
 
 /* Carrusel */
 .carousel {
-    background-color: #ff453a; 
+    background-color: #000483;
+    /* #ff453a;  */
     color: white;
     text-align: center;
-    padding: 30px 5px 0;
-    margin: 5px 0;
+    /* padding: 30px 5px 0;
+    margin: 5px 0; */
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-    position: relative;  
-    height: 180px;   
+    position: relative; 
+    width: 100%; 
+    height:   275px;   
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        height: 150px;
+    }
+}
+
+
+
 
 .mascot {
     position: relative;
@@ -170,6 +186,53 @@ header {
     width: auto;
 }
 
+@media (max-width: 768px) {
+    .mascot {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+  .mascot {
+      display: none;
+  }
+}
+
+/* Estilo general para el contenedor y las imágenes */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Ajuste para pantallas grandes (por ejemplo, desktops) */
+@media (min-width: 1024px) {
+  #carousel {
+    height: 150px; /* Puedes ajustar esta altura según necesites */
+  }
+}
+
+/* Ajuste para pantallas medianas (tablets) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  #carousel {
+    height: 200px;
+  }
+}
+
+/* Ajuste para pantallas pequeñas (smartphones) */
+@media (max-width: 767px) {
+  #carousel {
+    height: 200px; /* Altura reducida para mejorar la visualización en móviles */
+  }
+}
+
 .slide {
     /* font-family: Arial, sans-serif; */
     font-size: 1.7rem;
@@ -183,4 +246,88 @@ header {
 
 .slide.active {
     opacity: 1;
+}
+.slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-color: #f0f0f0; /* Opcional: un color de fondo para las áreas vacías */
+}
+.slide p {
+  font-size: 1.5rem;
+  color: white;
+  background-color: darkblue;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Ajuste para pantallas grandes (por ejemplo, desktops) */
+@media (min-width: 1024px) {
+  .carousel {
+    height: 220px; /* Puedes ajustar esta altura según necesites */
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+/* Ajuste para pantallas medianas (tablets) */
+@media (max-width: 1027px) and (min-width: 768px) {
+  .carousel {
+    height: 150px;
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover ;
+    display: block;
+  }
+}
+
+/* Ajuste para pantallas pequeñas (smartphones) */
+@media (max-width: 767px) {
+  .carousel {
+    height: 100px; /* Altura reducida para mejorar la visualización en móviles */
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+/* Ajuste para pantallas pequeñas (smartphones) */
+@media (max-width: 480px) {
+  .carousel {
+    height: 70px; /* Altura reducida para mejorar la visualización en móviles */
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+}
+@media (max-width: 340px) {
+  .carousel {
+    height: 50px; /* Altura reducida para mejorar la visualización en móviles */
+  }
+  .carousel img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
 }

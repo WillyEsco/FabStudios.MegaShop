@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
- 
-body {
+ body {
+    /* font-family: 'Arial', sans-serif; */
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -13,6 +13,26 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+}
+
+.content {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+  }
+/* Estilos del header */
+
+
+.carousel {
+    padding-left: 10px; 
+    /* Agrega espacio a la izquierda del logo */
 }
 
 
@@ -86,20 +106,40 @@ body {
   transform: scale(1.1);
 }
 header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0059b3; /* Azul tomado del logo */
+  /* padding: 10px;  */
   border-bottom: 2px solid rgba(0, 0, 0, 0.12); /* Añadido para estilo Material */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .encabezado {
-  /* display: grid;
+  display: grid;
   grid-template-columns: auto 1fr auto;
-  align-items: center; */
+  align-items: center;
   padding: 10px 20px 0px 10px;
   background-color: #0059b3; /* Color original del header */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   gap: 0px;
 }
-
+/* -------- */
+/* Carrusel */
+.carousel {
+    background-color: #ff453a; 
+    /* Rojo del logo */
+    color: white;
+    text-align: center;
+    padding: 30px 5px 0;
+    margin: 5px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    position: relative;
+    height: 180px; 
+    /* Aumentamos la altura */
+    overflow: hidden;
+}
 
 .mascot {
     position: relative;
@@ -120,10 +160,37 @@ header {
     width: auto;
 }
 
+.slide {
+    /* font-family: Arial, sans-serif; */
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+.slide.active {
+    opacity: 1;
+}
 /* Estilos de productos */
-
-
+main {
+    flex-grow: 1; 
+     /* Para que ocupe el espacio disponible y el footer se mantenga al final */
+    padding: 5px;
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 h2 {
     text-align: center;
     color: #0059b3; 
@@ -199,6 +266,50 @@ h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Estilos para el cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Estilos para el Footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #0059b3;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    padding: 20px 0;
+
+    /* display: flex; */
+    align-items: center;  
+    /* Alinea el contenido verticalmente al centro */
+    /* justify-content: center; Centra horizontalmente */
+    padding: 10px;
+    /* background-color: #004080; */
+    color: white;
+    
+}
+
+
+
+footer img {
+    height: 60px;
+    margin-right: 5px; 
+    /* Espacio entre el logo y el texto */
 }
 
 
@@ -318,6 +429,56 @@ h2 {
     margin-bottom: 20px;
 }
 
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .modal-body input,
+  .modal-body textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  .modal-body button {
+    width: 100%;
+    padding: 15px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+    /* Media Query para pantallas pequeñas (hasta 600px) */
+    @media screen and (max-width: 600px) {
+    .modal-content {
+      width: 95%; 
+      /* Ajusto el ancho para pantallas más pequeñas */
+    }
+  
+    .modal-header .logo,
+    .modal-header .mascota {
+      width: 80px; 
+      /* Reduzco el tamaño del logo y la mascota en pantallas pequeñas */
+    }
+  
+    .modal-body input,
+    .modal-body textarea {
+      padding: 10px; 
+      /* Reduzco el padding para que el form sea más compacto */
+      font-size: 0.9rem; 
+      /* Ajusto el tamaño del texto */
+    }
+  
+    .modal-body button {
+      padding: 10px; 
+      /* Ajusto el tamaño del botón */
+      font-size: 1rem; 
+      /* Reduzco el tamaño del texto en el botón */
+    }
 
 /* ---------------------------- */
 .modal-header {
@@ -345,6 +506,7 @@ h2 {
         /* height: auto; */
       }
     }
+  }
 
 /* ---------------------------- */   
   
@@ -445,6 +607,11 @@ textarea:focus {
       flex-direction: column;
       text-align: center;
       }
+      .carousel p {
+        font-size: 1.4rem; 
+        /* Leyenda del carrousel para celulares de pantallas chicas */
+
+    }
     }
   /* Sección Nosotros */
 .nosotros-section {
@@ -463,7 +630,12 @@ textarea:focus {
   .video-container {
     margin: 5px 0;
   }
-
+/* Contenedor principal que ocupa el viewport */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 /* Estilos generales */
 h2 {
     font-size: 2em; /* Tamaño estándar para escritorio */
@@ -548,7 +720,26 @@ h2 {
       aspect-ratio: 16 / 9;
   }
 }
+/* Estilos para el footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0055aa; /* Cambia esto al color de fondo de tu elección */
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+}
 
+
+footer p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  line-height: 1;
+}
 h2 {
   text-align: center;
   color: #0059b3; 
@@ -664,7 +855,11 @@ footer {
 }
 
 /* Estilos generales */
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 /* Navbar */
 .navbar {
@@ -677,7 +872,6 @@ footer {
   padding: 5px 5px;
   position: relative;
   margin: 0 auto;
-  width: 100%;
 }
 
 /* Menu-icon (hamburguesa) */
@@ -770,6 +964,13 @@ footer {
   }
 }
 
+/* .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: around;
+    gap: 20px;
+} */
 
 .product-grid {
   display: grid;
@@ -780,6 +981,18 @@ footer {
   max-width: 100%; /* Centra la grilla en el viewport */
 }
 
+/* .product-grid {
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  gap: 20px;
+}  */
+/* Ajusta 300px según el ancho deseado de cada card */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .product-grid {
   display: flex;
   flex-wrap: wrap;
@@ -893,6 +1106,26 @@ p .precio {
   font-size: 1.2em;
   color: #555;
 }
+/* Estilos para el carrusel */
+#carouselBanner {
+  margin-top: 0px; /* Ajusta el margen superior según sea necesario */
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos para el carrusel */
+#carouselBanner {
+  margin-top: 0; /* Asegura que no haya margen superior */
+  width: 100%; /* Asegura que ocupe todo el ancho del viewport */
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
 
 /* Media Queries */
 @media (max-width: 768px) {
@@ -917,5 +1150,3 @@ p .precio {
   .search-bar input {
       max-width: 200px;
   }
-}
-
