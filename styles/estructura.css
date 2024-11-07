@@ -198,40 +198,7 @@ header {
   }
 }
 
-/* Estilo general para el contenedor y las imágenes */
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
 
-.carousel img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-}
-
-/* Ajuste para pantallas grandes (por ejemplo, desktops) */
-@media (min-width: 1024px) {
-  #carousel {
-    height: 150px; /* Puedes ajustar esta altura según necesites */
-  }
-}
-
-/* Ajuste para pantallas medianas (tablets) */
-@media (max-width: 1023px) and (min-width: 768px) {
-  #carousel {
-    height: 200px;
-  }
-}
-
-/* Ajuste para pantallas pequeñas (smartphones) */
-@media (max-width: 767px) {
-  #carousel {
-    height: 200px; /* Altura reducida para mejorar la visualización en móviles */
-  }
-}
 
 .slide {
     /* font-family: Arial, sans-serif; */
@@ -255,79 +222,105 @@ header {
   width: 100%;
   background-color: #f0f0f0;
 }
-.carousel img {
+
+/* Estilo general para el contenedor y las imágenes */
+.carousel {
   width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #000483;
+}
+
+.carousel img {
+  height: 200px;
+  /* width: 100%; */
   height: auto;
   object-fit: cover;
-  background-color: #f0f0f0; /* Opcional: un color de fondo para las áreas vacías */
-}
-.slide p {
-  font-size: 1.5rem;
-  color: white;
-  background-color: darkblue;
-  text-align: center;
-  padding: 10px;
+  display: block;
+  background-color: #000483;
 }
 
 /* Ajuste para pantallas grandes (por ejemplo, desktops) */
 @media (min-width: 1024px) {
-  .carousel {
-    height: 220px; /* Puedes ajustar esta altura según necesites */
-  }
-  .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
+  #carousel {
+    height: 130px; /* Puedes ajustar esta altura según necesites */
   }
 }
 
 /* Ajuste para pantallas medianas (tablets) */
-@media (max-width: 1027px) and (min-width: 768px) {
-  .carousel {
-    height: 150px;
-  }
-  .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover ;
-    display: block;
+@media (max-width: 1023px) and (min-width: 768px) {
+  #carousel {
+    height: 200px;
   }
 }
 
 /* Ajuste para pantallas pequeñas (smartphones) */
 @media (max-width: 767px) {
-  .carousel {
-    height: 100px; /* Altura reducida para mejorar la visualización en móviles */
+  #carousel {
+    height: 200px; /* Altura reducida para mejorar la visualización en móviles */
   }
-  .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit:fill;
+  display: block;
+}
+@media (min-width: 1024px) {
+  .carousel {
+    height: 250px; /* Puedes ajustar esta altura según necesites */
+  }
+}
+@media (max-width: 1024px) {
+  .carousel {
+    height: 200px; /* Puedes ajustar esta altura según necesites */
+  }
+}
+@media (max-width: 965px) {
+  .carousel {
+    height: 170px;
+  }
+}
+@media (max-width: 860px) {
+  .carousel {
+    height: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel {
+    height: 150px; /* Altura reducida para mejorar la visualización en móviles */
+  }
+}
+@media (max-width: 729px) {
+  .carousel {
+    height: 130px;
+  }
+}
+@media (max-width: 636px) {
+  .carousel {
+    height: 110px;
+  }
+}
+@media (max-width: 536px) {
+  .carousel {
+    height: 90px;
   }
 }
 /* Ajuste para pantallas pequeñas (smartphones) */
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   .carousel {
-    height: 70px; /* Altura reducida para mejorar la visualización en móviles */
+    height: 85px; 
   }
-  .carousel img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
+}  */
+
+@media (max-width: 436px) {
+  .carousel {
+    height: 80px;
   }
 }
 @media (max-width: 340px) {
   .carousel {
-    height: 50px; /* Altura reducida para mejorar la visualización en móviles */
-  }
-  .carousel img {
-    width: 100%;
-    border-radius: 5px;
-    height: auto;
-    object-fit: cover;
-    display: block;
+    height: 65px; /* Altura reducida para mejorar la visualización en móviles */
   }
 }
