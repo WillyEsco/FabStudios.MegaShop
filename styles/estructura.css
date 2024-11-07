@@ -145,7 +145,7 @@ header {
     text-align: center;
     /* padding: 30px 5px 0;
     margin: 5px 0; */
-    border-radius: 12px;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
     position: relative; 
     width: 100%; 
@@ -239,28 +239,24 @@ header {
   display: block;
   background-color: #000483;
 }
-
 /* Ajuste para pantallas grandes (por ejemplo, desktops) */
 @media (min-width: 1024px) {
   #carousel {
     height: 130px; /* Puedes ajustar esta altura según necesites */
   }
 }
-
 /* Ajuste para pantallas medianas (tablets) */
 @media (max-width: 1023px) and (min-width: 768px) {
   #carousel {
     height: 200px;
   }
 }
-
 /* Ajuste para pantallas pequeñas (smartphones) */
 @media (max-width: 767px) {
   #carousel {
     height: 200px; /* Altura reducida para mejorar la visualización en móviles */
   }
 }
-
 .carousel img {
   width: 100%;
   height: auto;
