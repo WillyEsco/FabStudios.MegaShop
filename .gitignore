@@ -1,0 +1,26 @@
+# Ignorar archivos y carpetas específicas de imágenes
+# Ignora todas las carpetas que empiezan con un punto
+/.
+
+# Ignora imágenes específicas por su extensión (ajusta según las que uses)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# Ignorar el contenido de la carpeta de imágenes, pero permitir un subdirectorio si fuera necesario
+images/*
+!images/permitidas/
+
+# Ignorar node_modules y archivos de dependencias
+node_modules/
+dist/
+
+# Ignorar archivos de configuración de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar carpetas o archivos temporales
+temp/
+*.tmp

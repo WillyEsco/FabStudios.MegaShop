@@ -14,7 +14,23 @@
     display: flex;
     flex-direction: column;
 }
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
   h2 {
     text-align: center;
     color: #0059b3; 
@@ -27,7 +43,6 @@
     max-width: 400px;
     display: flex;
     justify-self: center;
-  
   }
   
   .searchbar .form-control {
@@ -140,22 +155,17 @@ header {
 /* Carrusel */
 .carousel {
     background-color: #000483;
-    /* #ff453a;  */
     color: white;
     text-align: center;
-    /* padding: 30px 5px 0;
-    margin: 5px 0; */
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
     position: relative; 
     width: 100%; 
-    height:   275px;   
+    height: 275px;   
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-
-  
 }
 
 @media (max-width: 768px) {
@@ -163,9 +173,6 @@ header {
         height: 150px;
     }
 }
-
-
-
 
 .mascot {
     position: relative;
@@ -198,8 +205,6 @@ header {
   }
 }
 
-
-
 .slide {
     /* font-family: Arial, sans-serif; */
     font-size: 1.7rem;
@@ -229,94 +234,97 @@ header {
   overflow: hidden;
   position: relative;
   background-color: #000483;
+  object-fit: cover;
+  display: block;
+}
+.carousel {
+  height: 230px;
 }
 
 .carousel img {
-  height: 200px;
-  /* width: 100%; */
-  height: auto;
-  object-fit: cover;
-  display: block;
-  background-color: #000483;
-}
-/* Ajuste para pantallas grandes (por ejemplo, desktops) */
-@media (min-width: 1024px) {
-  #carousel {
-    height: 130px; /* Puedes ajustar esta altura según necesites */
-  }
-}
-/* Ajuste para pantallas medianas (tablets) */
-@media (max-width: 1023px) and (min-width: 768px) {
-  #carousel {
-    height: 200px;
-  }
-}
-/* Ajuste para pantallas pequeñas (smartphones) */
-@media (max-width: 767px) {
-  #carousel {
-    height: 200px; /* Altura reducida para mejorar la visualización en móviles */
-  }
-}
-.carousel img {
   width: 100%;
   height: auto;
-  object-fit:fill;
+  object-fit: fill;
   display: block;
 }
-@media (min-width: 1024px) {
+
+/* Ajustes para diferentes tamaños de pantalla */
+/* @media (max-width: 1200px) {
   .carousel {
-    height: 250px; /* Puedes ajustar esta altura según necesites */
+    height: 220px;
   }
 }
+
+@media (max-width: 1150px) {
+  .carousel {
+    height: 230px;
+  }
+} */
+
+/* @media (max-width: 1050px) { */
+  .carousel img {
+    height: 230px;
+    object-fit: cover;
+  }
+/* } */
+/* 
+@media (max-width: 1042px) {
+  .carousel {
+    height: 210px;
+  }
+}
+
 @media (max-width: 1024px) {
   .carousel {
-    height: 200px; /* Puedes ajustar esta altura según necesites */
+    height: 195px;
   }
 }
+
 @media (max-width: 965px) {
   .carousel {
-    height: 170px;
+    height: 210px;
   }
 }
+
 @media (max-width: 860px) {
+  .carousel {
+    height: 190px;
+  }
+}
+
+@media (max-width: 767px) {
   .carousel {
     height: 150px;
   }
 }
-@media (max-width: 767px) {
-  .carousel {
-    height: 150px; /* Altura reducida para mejorar la visualización en móviles */
-  }
-}
+
 @media (max-width: 729px) {
   .carousel {
-    height: 130px;
+    height: 230px;
   }
 }
+
 @media (max-width: 636px) {
   .carousel {
-    height: 110px;
+    height: 230px;
   }
 }
-@media (max-width: 536px) {
+
+@media (max-width: 538px) {
   .carousel {
-    height: 90px;
+    height: 230px;
   }
 }
-/* Ajuste para pantallas pequeñas (smartphones) */
-/* @media (max-width: 480px) {
-  .carousel {
-    height: 85px; 
-  }
-}  */
 
 @media (max-width: 436px) {
   .carousel {
-    height: 80px;
+    height: 230px;
   }
 }
+
 @media (max-width: 340px) {
   .carousel {
-    height: 65px; /* Altura reducida para mejorar la visualización en móviles */
+    height: 230px;
   }
-}
+} */
+/* me esta fallando el carrusel respecto a su viualizacion */
