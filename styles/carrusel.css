@@ -110,7 +110,7 @@
   /* Ajuste para pantallas pequeñas (smartphones) */
   @media (max-width: 800px) {
     .carousel {
-      height: 170px; /* Altura reducida para mejorar la visualización en móviles */
+      height: 160px; /* Altura reducida para mejorar la visualización en móviles */
     }
     .carousel img {
       width: 100%;
@@ -155,33 +155,10 @@
       display: block;
     }
   }
+ 
   @media (max-width: 400px) {
     .carousel {
-      height: 75px; /* Altura reducida para mejorar la visualización en móviles */
-    }
-    .carousel img {
-      width: 100%;
-      border-radius: 5px;
-      height: auto;
-      object-fit: cover;
-      display: block;
-    }
-  }
-  @media (max-width: 400px) {
-    .carousel {
-      height: 60px; /* Altura reducida para mejorar la visualización en móviles */
-    }
-    .carousel img {
-      width: 100%;
-      border-radius: 5px;
-      height: auto;
-      object-fit: cover;
-      display: block;
-    }
-  }
-  @media (max-width: 400px) {
-    .carousel {
-      height: 50px; /* Altura reducida para mejorar la visualización en móviles */
+      height: 80px; /* Altura reducida para mejorar la visualización en móviles */
     }
     .carousel img {
       width: 100%;
