@@ -77,7 +77,7 @@
     .carousel img {
       width: 100%;
       height: auto;
-      object-fit: cover;
+      object-fit:contain;
       display: block;
     }
   }
@@ -88,83 +88,83 @@
     .carousel {
       height: 200px;
     }
-    .carousel img {
+    /* .carousel img {
       width: 100%;
       height: auto;
       object-fit: cover ;
       display: block;
-    }
+    } */
   }
     /* Ajuste para pantallas pequeñas (smartphones) */
     @media (max-width: 900px) {
         .carousel {
           height: 170px; /* Altura reducida para mejorar la visualización en móviles */
         }
-        .carousel img {
+        /* .carousel img {
           width: 100%;
           height: auto;
           object-fit: cover;
           display: block;
-        }
+        } */
       }
   /* Ajuste para pantallas pequeñas (smartphones) */
   @media (max-width: 800px) {
     .carousel {
       height: 160px; /* Altura reducida para mejorar la visualización en móviles */
     }
-    .carousel img {
+    /* .carousel img {
       width: 100%;
       height: auto;
       object-fit: cover;
       display: block;
-    }
+    } */
   }
    /* Ajuste para pantallas pequeñas (smartphones) */
    @media (max-width: 700px) {
     .carousel {
       height: 135px; /* Altura reducida para mejorar la visualización en móviles */
     }
-    .carousel img {
+    /* .carousel img {
       width: 100%;
       height: auto;
       object-fit: cover;
       display: block;
-    }
+    } */
   }
   /* Ajuste para pantallas pequeñas (smartphones) */
   @media (max-width: 600px) {
     .carousel {
       height: 125px; /* Altura reducida para mejorar la visualización en móviles */
     }
-    .carousel img {
+    /* .carousel img {
       width: 100%;
       height: auto;
       object-fit: cover;
       display: block;
-    }
+    } */
   }
   @media (max-width: 500px) {
     .carousel {
       height: 90px; /* Altura reducida para mejorar la visualización en móviles */
     }
-    .carousel img {
+    /* .carousel img {
       width: 100%;
       border-radius: 5px;
       height: auto;
       object-fit: cover;
       display: block;
-    }
+    } */
   }
  
   @media (max-width: 400px) {
     .carousel {
       height: 80px; /* Altura reducida para mejorar la visualización en móviles */
     }
-    .carousel img {
+    /* .carousel img {
       width: 100%;
       border-radius: 5px;
       height: auto;
       object-fit: cover;
       display: block;
-    }
+    } */
   }

@@ -35,7 +35,7 @@ h2 {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
+    gap: 20px;
 }
 
 .product-card {
@@ -194,7 +194,7 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         justify-content: center;
-        gap: 5px; /* Espacio entre cards */
+        gap: 20px; /* Espacio entre cards */
         padding: 20px; /* Ajusta según sea necesario */
         max-width: 100%; /* Centra la grilla en el viewport */
       }
