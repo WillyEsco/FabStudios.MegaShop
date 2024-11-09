@@ -5,15 +5,15 @@ const navLinks = document.getElementById('nav-links');
 menuIcon.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
-const slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-function showNextSlide() {
-    slides[currentSlide].classList.remove('active'); // Ocultar la diapositiva actual
-    currentSlide = (currentSlide + 1) % slides.length; // Mover a la siguiente
-    slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
-}
+// const slides = document.querySelectorAll('.slide');
+// let currentSlide = 0;
+// function showNextSlide() {
+//     slides[currentSlide].classList.remove('active'); // Ocultar la diapositiva actual
+//     currentSlide = (currentSlide + 1) % slides.length; // Mover a la siguiente
+//     slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
+// }
 // Cambiar la diapositiva cada 3 segundos
-setInterval(showNextSlide, 2000);
+// setInterval(showNextSlide, 2000);
 
 // Obtener el modal y el enlace de contacto
 var modal = document.getElementById("contactModal");
