@@ -110,7 +110,7 @@
   /* Ajuste para pantallas pequeñas (smartphones) */
   @media (max-width: 800px) {
     .carousel {
-      height: 160px; /* Altura reducida para mejorar la visualización en móviles */
+      height: 170px; /* Altura reducida para mejorar la visualización en móviles */
     }
     .carousel img {
       width: 100%;
