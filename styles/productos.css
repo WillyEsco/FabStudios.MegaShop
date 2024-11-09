@@ -1,4 +1,4 @@
-
+/* Estilos de productos */
 /* Estilos de productos */
 main {
     flex-grow: 1; 
@@ -103,9 +103,6 @@ body {
     flex-direction: column;
 }
 
-
-
-
 /* Botones estilo Material Design 3 */
 .btn-md3 {
     display: inline-flex;
@@ -197,19 +194,11 @@ body {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         justify-content: center;
-        gap: 20px; /* Espacio entre cards */
+        gap: 5px; /* Espacio entre cards */
         padding: 20px; /* Ajusta según sea necesario */
         max-width: 100%; /* Centra la grilla en el viewport */
       }
-      
-      /* .product-grid {
-        display: grid;
-        grid-template-rows: max-content;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
-        gap: 20px;
-      }  */
-      /* Ajusta 300px según el ancho deseado de cada card */
-      
+      /* gfe */
       
       @media (max-width: 700px) {
           .product-grid {

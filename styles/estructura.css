@@ -28,7 +28,7 @@ main {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    gap: 5px;
     justify-items: center;
 }
   h2 {
@@ -206,125 +206,49 @@ header {
 }
 
 .slide {
-    /* font-family: Arial, sans-serif; */
-    font-size: 1.7rem;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slide.active {
     opacity: 1;
 }
-.slide{
+.slide {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: flex-start; /* Align items to the top */
+  /* height: 100%; */
   width: 100%;
   background-color: #f0f0f0;
 }
 
 /* Estilo general para el contenedor y las imágenes */
 .carousel {
-  width: 100%;
+  width: auto;
+  height: auto ;
   overflow: hidden;
   position: relative;
   background-color: #000483;
-  object-fit: cover;
+  object-fit: contain ;
   display: block;
 }
 .carousel {
-  height: 230px;
+  height: 220px;
 }
 
 .carousel img {
   width: 100%;
   height: auto;
-  object-fit: fill;
+  object-fit:scale-down;
   display: block;
 }
 
-/* Ajustes para diferentes tamaños de pantalla */
-/* @media (max-width: 1200px) {
-  .carousel {
-    height: 220px;
-  }
-}
-
-@media (max-width: 1150px) {
-  .carousel {
-    height: 230px;
-  }
-} */
-
-/* @media (max-width: 1050px) { */
   .carousel img {
-    height: 230px;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
   }
-/* } */
-/* 
-@media (max-width: 1042px) {
-  .carousel {
-    height: 210px;
-  }
-}
 
-@media (max-width: 1024px) {
-  .carousel {
-    height: 195px;
-  }
-}
-
-@media (max-width: 965px) {
-  .carousel {
-    height: 210px;
-  }
-}
-
-@media (max-width: 860px) {
-  .carousel {
-    height: 190px;
-  }
-}
-
-@media (max-width: 767px) {
-  .carousel {
-    height: 150px;
-  }
-}
-
-@media (max-width: 729px) {
-  .carousel {
-    height: 230px;
-  }
-}
-
-@media (max-width: 636px) {
-  .carousel {
-    height: 230px;
-  }
-}
-
-@media (max-width: 538px) {
-  .carousel {
-    height: 230px;
-  }
-}
-
-@media (max-width: 436px) {
-  .carousel {
-    height: 230px;
-  }
-}
-
-@media (max-width: 340px) {
-  .carousel {
-    height: 230px;
-  }
-} */
-/* me esta fallando el carrusel respecto a su viualizacion */
