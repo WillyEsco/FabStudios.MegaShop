@@ -13,7 +13,7 @@ function showNextSlide() {
     slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
 }
 // Cambiar la diapositiva cada 3 segundos
-setInterval(showNextSlide, 3000);
+setInterval(showNextSlide, 2000);
 
 // Obtener el modal y el enlace de contacto
 var modal = document.getElementById("contactModal");
