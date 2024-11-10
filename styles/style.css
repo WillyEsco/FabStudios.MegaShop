@@ -301,9 +301,7 @@ footer {
     padding: 10px;
     /* background-color: #004080; */
     color: white;
-    
 }
-
 
 
 footer img {
@@ -771,7 +769,7 @@ h2 {
 
 .reseñas-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  grid-template-columns: repeat(3, 1fr); /* Dos columnas */
   gap: 20px;
   margin-top: 20px;
 }
