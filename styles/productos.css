@@ -330,7 +330,7 @@ body {
         }
     
         .product-card {
-            max-width: 430px;
+            max-width: 420px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -341,8 +341,8 @@ body {
     
         .card {
             width: 100%; /* Asegura que las cards tomen el ancho completo */
-            max-width: 390px;
-            height: 490px;
+            max-width: 380px;
+            height: 480px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
