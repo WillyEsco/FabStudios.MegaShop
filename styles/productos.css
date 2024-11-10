@@ -369,7 +369,7 @@ body {
             margin-top: auto;
             width: 100%; /* Full width */
             box-sizing: border-box;
-            font-size: 1.2em;
+            font-size: 1em;
         }
     
         .image-container {
@@ -387,7 +387,7 @@ body {
     
         .product-card h3 {
             margin: 10px 0;
-            font-size: 1.5em;
+            font-size: 1.2em;
             text-align: center;
             width: 100%;
         }
