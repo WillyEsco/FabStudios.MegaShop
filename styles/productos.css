@@ -398,7 +398,7 @@ body {
             color:#333;
      }
     }
-    @media (min-width: 600px) and (orientation: landscape), (min-width: 1440px) {
+    @media (min-width: 1440px) and (orientation: landscape), (min-width: 1440px) {
         .product-grid {
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         }
