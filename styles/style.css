@@ -797,10 +797,16 @@ h2 {
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
   .reseñas-grid {
+    grid-template-columns: repeat(2, 1fr);  
+    /* grid-template-columns: 2fr;  */
+}
+}
+@media (max-width: 600px) {
+  .reseñas-grid {
       grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
   }
 }
-/* Estilos para el modal */
+
 
 .social-icons {
   display: flex;
