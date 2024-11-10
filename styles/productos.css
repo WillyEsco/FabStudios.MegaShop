@@ -187,7 +187,6 @@ body {
       .carousel p {
         font-size: 1.4rem; 
         /* Leyenda del carrousel para celulares de pantallas chicas */
-
     }
     }
     .product-grid {
@@ -195,7 +194,6 @@ body {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         justify-content: center;
         gap: 20px; /* Espacio entre cards */
-
         max-width: 100%; /* Centra la grilla en el viewport */
       }
       /* gfe */
@@ -218,7 +216,7 @@ body {
           align-items: center;
           text-align: center;
           border: 1px solid #ddd;
-          padding: 20px;
+          /* padding: 20px; */
           box-sizing: border-box;
       }
       
