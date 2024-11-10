@@ -308,7 +308,7 @@ body {
             border: none;
             cursor: pointer;
             margin-top: auto;
-            font-size: 1em;
+            font-size: .9em;
         }
         .product-card {
             max-width: 200px;
@@ -330,7 +330,7 @@ body {
         }
     
         .product-card {
-            max-width: 450px;
+            max-width: 430px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -341,8 +341,8 @@ body {
     
         .card {
             width: 100%; /* Asegura que las cards tomen el ancho completo */
-            max-width: 400px;
-            height: 500px;
+            max-width: 390px;
+            height: 490px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -368,12 +368,13 @@ body {
             margin-top: auto;
             width: 100%; /* Full width */
             box-sizing: border-box;
+            font-size: 1.2em;
         }
     
         .image-container {
             width: 100%;
-            max-width: 380px;
-            height: 380px;
+            max-width: 370px;
+            height: 370px;
             overflow: hidden;
         }
     
