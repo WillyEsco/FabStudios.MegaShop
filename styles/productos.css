@@ -399,7 +399,7 @@ body {
      }
     }
 
-    @media (max-width: 720px) and (orientacion: landscape)
+    @media (max-width: 720px) and (orientation: landscape) 
 
      {
         .product-grid {
@@ -419,7 +419,7 @@ body {
     
         .card {
             width: 100%; /* Asegura que las cards tomen el ancho completo */
-            max-width: 380px;
+            max-width: 400px;
             height: 480px;
             display: flex;
             flex-direction: column;
@@ -430,7 +430,8 @@ body {
     
         .card-content {
             width: 100%; /* Asegura que el contenido tome el ancho completo de la card */
-            padding: 10px; /* Opcional: Espaciado interno */
+            /* padding: 10px;  */
+            /* Opcional: Espaciado interno */
             box-sizing: border-box;
         }
     
