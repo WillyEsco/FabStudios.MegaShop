@@ -399,45 +399,4 @@ body {
      }
     }
 
-    @media (max-width: 600px) and (orientation: landscape) {
-        .product-grid {
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        }
-        .btn-md3 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            margin-top: auto;
-            font-size: .8em;
-        }
-        .product-card {
-            max-width: 200px;
-        }
 
-        .card {
-            width: 200px; /* Ancho de la card */
-            height: 300px; /* Alto de la card */
-        }
-
-        .image-container {
-            width: 180px;
-            height: 180px; /* Alto fijo que deseas para todas las imágenes */
-        }
-        .product-card h3 {
-            margin: 10px 0;
-            font-size: .9em;
-            text-align: center;
-            width: 100%;
-        }
-
-        .product-card p {
-            margin: 10px 0;
-            font-size: 1em;
-            color: #333;
-        }
-    }
