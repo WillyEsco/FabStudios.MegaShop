@@ -399,7 +399,7 @@ body {
      }
     }
 
-    @media (max-width: 740px) and (orientacion: landscape)
+    @media (max-width: 720px) and (orientacion: landscape)
 
      {
         .product-grid {
