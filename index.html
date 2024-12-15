@@ -12,6 +12,7 @@
     <!-- <link rel="stylesheet" href="styles/productos2.css"> -->
     <link rel="stylesheet" href="styles/footer.css">
    <link rel="stylesheet" href="./styles/carrusel.css"> 
+   <link rel="stylesheet" href="./styles/cart.css">
     <!-- <link rel="stylesheet" href="./styles/reseñas.css"> -->
 
     <!-- <link rel="stylesheet" href="styles/style.css"> -->
@@ -40,7 +41,9 @@
             </button>
         </div>
         <div class="icons-container">
-            <span class="material-icons">shopping_cart</span>
+            <a href="./carrito.html">
+                <span class="material-icons">shopping_cart</span>
+            </a>
             <span class="material-icons">account_circle</span>
         </div>
     </header>
@@ -65,7 +68,9 @@
                 </ul>
             </nav>
         </div>    
+        <!-- // busqueda en el carrito -->
 
+        
 <!-- Modal de contacto -->
 <div id="contactModal" class="modal">
     <div class="modal-content">
@@ -75,7 +80,8 @@
             <h2 class="modal-title">Contacto</h2>
             <img src="./images/mascota1-frente.png" alt="Mascota frente 1 MegaShop" class="mascota">
           </div>
-        <form action="https://formspree.io/f/mjkvrgpr" method="POST">
+          
+        <form action="https://formspree.io/f/xzzbzzge" method="POST">
             <div class="form-group">
                 <input type="text" id="name" name="name" required placeholder="Ingresa tu Nombre...">
             </div>
@@ -123,12 +129,14 @@
         </div>
             <section id="productos">
             <div class="product-grid">
-                <div class="product-card">
+                <div class="product-card" data-id="1">
                     <div class="image-container">
                         <img src="./images/prod/23.png" alt="Producto 1">
                     </div>
                     <div class="card-content">
                         <h3 class="nombre-producto">Mickey Mouse<br> Paperweight</h3>
+                        <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                        <div class="description" style="display: none;"></div> 
                         <p class="precio">U$S 25.99</p>
                         <button class="btn-md3">
                             <span class="btn-md3-icon">
@@ -139,12 +147,14 @@
                     </div>
                 </div>
 
-                <div class="product-card">
+                <div class="product-card" data-id="2">
                     <div class="image-container">
                         <img src="./images/prod/24.png" alt="Producto 1">
                     </div>
                     <div class="card-content">
                         <h3 class="nombre-producto">Mickey Mouse<br> Wizard Statuette</h3>
+                        <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                        <div class="description" style="display: none;"></div> 
                         <p class="precio">U$S 25.99</p>
                         <button class="btn-md3">
                             <span class="btn-md3-icon">
@@ -155,12 +165,14 @@
                     </div>
                 </div>
             
-                <div class="product-card">
+                <div class="product-card" data-id="3">
                 <div class="image-container">
                     <img src="./images/prod/1.png" alt="Producto 1">
                 </div>
                 <div class="card-content">
                     <h3 class="nombre-producto">Bed Stopper<br> Mickey Mouse</h3>
+                    <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                    <div class="description" style="display: none;"></div> 
                     <p class="precio">U$S 25.99</p>
                     <button class="btn-md3">
                         <span class="btn-md3-icon">
@@ -170,12 +182,14 @@
                     </button>                            
                 </div>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-id="4">
                 <div class="image-container">
                 <img src="./images/prod/21.png" alt="Producto 2">
                 </div>
                 <div class="card-content">
                     <h3 class="nombre-producto">Disney Welcome Garden</h3>
+                    <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                    <div class="description" style="display: none;"></div>
                     <p class="precio">U$S 25.99</p>
                     <button class="btn-md3">
                         <span class="btn-md3-icon">
@@ -185,12 +199,14 @@
                     </button>                            
                 </div>
             </div>
-            <div class="product-card">
+            <div class="product-card" data-id="5">
             <div class="image-container">
             <img src="./images/prod/3.png" alt="Producto 3">
             </div>
             <div class="card-content">
                 <h3 class="nombre-producto">Disney Air Fryer</h3>
+                <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                <div class="description" style="display: none;"></div>
                 <p class="precio">U$S 25.99</p>
                 <button class="btn-md3">
                     <span class="btn-md3-icon">
@@ -200,12 +216,14 @@
                 </button>                            
             </div>
         </div>
-        <div class="product-card">
+        <div class="product-card"  data-id="6">
             <div class="image-container">
             <img src="./images/prod/4.png" alt="Producto 4">
             </div>
             <div class="card-content">
                 <h3 class="nombre-producto">Disney Cooking Tables</h3>
+                <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                <div class="description" style="display: none;"></div>
                 <p class="precio">U$S 25.99</p>
                 <button class="btn-md3">
                     <span class="btn-md3-icon">
@@ -216,12 +234,14 @@
             </div>
         </div>
 
-        <div class="product-card">
+        <div class="product-card" data-id="7">
         <div class="image-container">
         <img src="./images/prod/5.png" alt="Producto 5">
         </div>
-        <div class="card-content">
+        <div class="card-content" >
             <h3 class="nombre-producto">Mickey Mouse Cookware</h3>
+            <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+            <div class="description" style="display: none;"></div> 
             <p class="precio">U$S 25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
@@ -231,12 +251,14 @@
             </button>                            
         </div>
         </div>  
-        <div class="product-card">
+        <div class="product-card"  data-id="8">
         <div class="image-container">
         <img src="./images/prod/6.png" alt="Producto 5">
         </div>
         <div class="card-content">
             <h3 class="nombre-producto">Cell Phone Holder</h3>
+            <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+            <div class="description" style="display: none;"></div>
             <p class="precio">U$S 25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
@@ -246,12 +268,14 @@
             </button>                            
         </div>
         </div>  
-        <div class="product-card">
+        <div class="product-card" data-id="9">
         <div class="image-container">
         <img src="./images/prod/7.png" alt="Producto 5">
         </div>
-        <div class="card-content">
+        <div class="card-content" >
             <h3 class="nombre-producto">Disney KitchenAid</h3>
+            <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+            <div class="description" style="display: none;"></div>
             <p class="precio">U$S 25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
@@ -261,12 +285,14 @@
             </button>                            
         </div>
         </div>  
-        <div class="product-card">
+        <div class="product-card" data-id="10">
         <div class="image-container">
         <img src="./images/prod/8.png" alt="Producto 5">
         </div>
-        <div class="card-content">
+        <div class="card-content" >
             <h3 class="nombre-producto">Set of Pans</h3>
+            <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+            <div class="description" style="display: none;"></div>
             <p class="precio">U$S 25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
@@ -277,12 +303,14 @@
         </div>
         </div>  
 
-        <div class="product-card">
+        <div class="product-card" data-id="11">
         <div class="image-container">
             <img src="./images/prod/9.png" alt="Producto 5">
         </div>
-        <div class="card-content">
+        <div class="card-content" >
             <h3 class="nombre-producto">Disney Gang Fees</h3>
+            <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+            <div class="description" style="display: none;"></div>
             <p class="precio">U$S 25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
@@ -293,12 +321,14 @@
         </div>
         </div>  
 
-        <div class="product-card">
+        <div class="product-card" data-id="12">
         <div class="image-container">
             <img src="./images/prod/16.png" alt="Producto 5">
         </div>
-        <div class="card-content">
+        <div class="card-content" >
             <h3 class="nombre-producto">Mickey Mouse Bread Toaster</h3>
+            <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+            <div class="description" style="display: none;"></div>
             <p class="precio">U$S 25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
@@ -309,12 +339,14 @@
         </div>
         </div>  
 
-        <div class="product-card">
+        <div class="product-card"  data-id="13">
             <div class="image-container">
                 <img src="./images/prod/10.png" alt="Producto 5">
             </div>
             <div class="card-content">
             <h3 class="nombre-producto">Mickey Mouse <br> Night Lamp</h3>
+            <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+            <div class="description" style="display: none;"></div>
             <p class="precio">U$S 25.99</p>
             <button class="btn-md3">
                 <span class="btn-md3-icon">
@@ -324,12 +356,14 @@
             </button>
             </div>
             </div>  
-            <div class="product-card">
+            <div class="product-card"   data-id="14">
                 <div class="image-container">
                     <img src="./images/prod/11.png" alt="Producto 5">
                 </div>
                 <div class="card-content">
                     <h3 class="nombre-producto">Disney Waffle Iron</h3>
+                    <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                    <div class="description" style="display: none;"></div> 
                     <p class="precio">U$S 25.99</p>
                     <button class="btn-md3">
                         <span class="btn-md3-icon">
@@ -339,12 +373,14 @@
                     </button>                            
                 </div>
                 </div>  
-                <div class="product-card">
+                <div class="product-card"   data-id="15">
                     <div class="image-container">
                     <img src="./images/prod/12.png" alt="Producto 5">
                     </div>
                     <div class="card-content">
                         <h3 class="nombre-producto">MM Express <br> Coffee Maker</h3>
+                        <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                        <div class="description" style="display: none;"></div>
                         <p class="precio">U$S 25.99</p>
                         <button class="btn-md3">
                             <span class="btn-md3-icon">
@@ -355,12 +391,14 @@
                     </div>
 
                 </div>    
-                    <div class="product-card">
+                    <div class="product-card"  data-id="16">
                     <div class="image-container">
                     <img src="./images/prod/13.png" alt="Producto 5">
                     </div>
-                    <div class="card-content">
+                    <div class="card-content" >
                         <h3 class="nombre-producto">Carry on <br> Suitcase set</h3>
+                        <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                        <div class="description" style="display: none;"></div> 
                         <p class="precio">U$S 25.99</p>
                         <button class="btn-md3">
                             <span class="btn-md3-icon">
@@ -370,12 +408,14 @@
                         </button>                            
                     </div>
                     </div>  
-                    <div class="product-card">
+                    <div class="product-card"  data-id="17">
                         <div class="image-container">
                         <img src="./images/prod/17.png" alt="Producto 5">
                         </div>
                         <div class="card-content">
                             <h3 class="nombre-producto">Mickey Night Lamp 100 Years</h3>
+                            <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                            <div class="description" style="display: none;"></div>
                             <p class="precio">U$S 25.99</p>
                             <button class="btn-md3">
                                 <span class="btn-md3-icon">
@@ -385,12 +425,14 @@
                             </button>                            
                         </div>
                         </div>  
-                        <div class="product-card">
+                        <div class="product-card"   data-id="18">
                             <div class="image-container">
                             <img src="./images/prod/18.png" alt="Producto 5">
                             </div>
                             <div class="card-content">
                                 <h3 class="nombre-producto">Disney <br> Breakfast Set</h3>
+                                <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                                <div class="description" style="display: none;"></div> 
                                 <p class="precio">U$S 25.99</p>
                                 <button class="btn-md3">
                                     <span class="btn-md3-icon">
@@ -400,12 +442,14 @@
                                 </button>                            
                             </div>
                             </div>  
-                            <div class="product-card">
+                            <div class="product-card"   data-id="19">
+                                <div class="image-container">
+                                    <img src="./images/prod/19.png" alt="Producto 5">
+                                </div>
                                 <div class="card-content">
-                                    <div class="image-container">
-                                        <img src="./images/prod/19.png" alt="Producto 5">
-                                    </div>
                                     <h3 class="nombre-producto">Mickey and Minnie Electric Oven</h3>
+                                    <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                                    <div class="description" style="display: none;"></div> 
                                     <p class="precio">U$S 25.99</p>
                                     <button class="btn-md3">
                                         <span class="btn-md3-icon">
@@ -415,12 +459,14 @@
                                     </button>                            
                                 </div>
                                 </div>  
-                                <div class="product-card">
+                                <div class="product-card"   data-id="20">
                                     <div class="image-container">
                                     <img src="./images/prod/20.png" alt="Producto 5">
                                     </div>
                                     <div class="card-content">
                                         <h3 class="nombre-producto">Mickey In Love Paperweight</h3>
+                                        <span class="toggle-description material-icons" style="cursor: pointer;">expand_more</span>
+                                        <div class="description" style="display: none;"></div> 
                                         <p class="precio">U$S 25.99</p>
                                         <button class="btn-md3">
                                             <span class="btn-md3-icon">
@@ -433,7 +479,17 @@
             </div>  
             <!-- "product-grid"                -->
             </section>
-
+            <div id="cart-sidebar" class="cart-hidden">
+                <div class="cart-header">
+                    <h2>Carrito de Compras</h2>
+                </div>
+                <div id="cart-items"></div>
+                <div class="cart-footer">
+                    <p>Total: <span id="cart-total">0.00</span></p>
+                    <button id="checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+            
  
 </main>
         <!-- Footer -->
@@ -455,10 +511,19 @@
             <p>&copy; 2024 MegaShop - Derechos Reservados.</p>           
             </div>   
         </footer>
-        <div>
-        </body>
+     
+        <button id="cart-toggle" class="cart-float-btn">
+            <span class="material-icons">shopping_cart</span>
+        </button>
         
+        <!-- script para cargar el Carrito -->
+         
+        <!-- <script src="./scripts/cart.js"></script> -->
+
         <script src="./scripts/library.js"></script>
+        <!-- <script src="./scripts/cart.js"></script> -->
+
+        
 <script> const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
     function showNextSlide() {
@@ -467,8 +532,12 @@
         slides[currentSlide].classList.add('active'); // Mostrar la nueva diapositiva
     }
     // Cambiar la diapositiva cada 3 segundos
-    setInterval(showNextSlide, 1000);</script>
+    setInterval(showNextSlide, 1000);
+    </script>
+
+     <!-- <script>src="./scripts/cart.js"</script> -->
     <!-- <script> console.log(window.innerHeight);       </script> -->
+
 </div>
 </body>
 </html>
