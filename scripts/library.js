@@ -139,6 +139,10 @@ const productsData = [
         Amount: "10.00"
     }
 ];
+// funcion que dado un id devielve el item en el array de productos
+function getProductById(id) {
+    return productsData.find(product => product.id === id);
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     const products = document.querySelectorAll('.product-card');
@@ -247,9 +251,20 @@ function handleActionButtons(product, container, initialQuantity, resetCard) {
 
 });
 
+// Función para limpiar saltos de línea y espacios innecesarios
+function cleanText(text) {
+    return text.replace(/\n/g, " ").replace(/\s+/g, " ").trim();
+}
+
 function addToCartSidebar(product, quantity) {
     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-    const productTitle = product.querySelector('.nombre-producto').textContent;
+    // const productId = product.querySelector('.data-id').textContent;
+    // const productData = getProductById(parseInt(productId));
+    // const productTitle = productData.Name;
+    // const productPrice = parseFloat(productData.Amount);
+
+
+    const productTitle = cleanText(product.querySelector('.nombre-producto').textContent);
     const productPrice = parseFloat(product.querySelector('.precio').textContent.replace('U$S', '').trim());
 
     const existingProduct = cart.find(item => item.title === productTitle);
