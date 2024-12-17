@@ -1,0 +1,36 @@
+#cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+}
+
+.cart-hidden {
+    transform: translateX(100%);
+}
+
+.cart-visible {
+    transform: translateX(0);
+}
+
+.cart-header, .cart-footer {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+}
+
+#cart-items {
+    padding: 10px;
+}
+
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    text-align: left;
+}

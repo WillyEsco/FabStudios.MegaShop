@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/footer.css">
    <link rel="stylesheet" href="./styles/carrusel.css"> 
    <link rel="stylesheet" href="./styles/cart.css">
+   <link rel="stylesheet" href="./styles/sideCart.css">
     <!-- <link rel="stylesheet" href="./styles/reseñas.css"> -->
 
     <!-- <link rel="stylesheet" href="styles/style.css"> -->
@@ -43,7 +44,7 @@
             </button>
         </div>
         <div class="icons-container">
-            <a href="./cartGFE.html">
+            <a href="./cartGFE.html" target="_blank">
                 <span class="material-icons">shopping_cart</span>
             </a>
             <span class="material-icons">account_circle</span>
@@ -481,17 +482,32 @@
             </div>  
             <!-- "product-grid"                -->
             </section>
-           
             <!-- <div id="cart-sidebar" class="cart-hidden">
                 <div class="cart-header">
                     <h2>Carrito de Compras</h2>
+                </div>
+                <div id="cart-items"> -->
+                    <!-- Aquí se renderizan los items del carrito 
+                </div>
+                <div class="cart-footer">
+                    <p>Total: <span id="cart-total">0.00</span></p>
+                    <button id="checkout-btn">Finalizar Compra</button>
+                </div>
+            </div>
+            <button id="cart-toggle" class="cart-float-btn">
+                <span class="material-icons" style="color: white;">shopping_cart</span>
+            </button> -->
+            
+            <div id="cart-sidebar" class="cart-hidden">
+                <div class="cart-header">
+                    <h2 style="color:white">Carrito de Compras</h2>
                 </div>
                 <div id="cart-items"></div>
                 <div class="cart-footer">
                     <p>Total: <span id="cart-total">0.00</span></p>
                     <button id="checkout-btn">Finalizar Compra</button>
                 </div>
-            </div> -->
+            </div>
             
  
 </main>
@@ -516,14 +532,14 @@
         </footer>
      
         <!-- boton llamando a sidecart -->
-        <!-- <button id="cart-toggle" class="cart-float-btn">
-            <span class="material-icons" style="color: white;">shopping_cart</span>
-        </button> -->
-        
         <button id="cart-toggle" class="cart-float-btn">
+            <span class="material-icons" style="color: white;">shopping_cart</span>
+        </button>
+        
+        <!-- <button id="cart-toggle" class="cart-float-btn">
             <a href="./cartGFE.html"><span class="material-icons" 
                 style="color: white;">shopping_cart</span></a>
-        </button>
+        </button> -->
         <!-- script para cargar el Carrito -->
          
         <!-- <script src="./scripts/cart.js"></script> -->
