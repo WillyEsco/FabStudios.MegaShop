@@ -79,7 +79,8 @@ main {
 .search-bar input {
     /* padding: 10px; */
     padding-left: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.12); 
+    /* border: 0px solid rgba(0, 0, 0, 0.12);  */
+    border: none;
     /* Borde estilo Material */
     border-radius: 24px 0 0 24px;
     outline: none;
