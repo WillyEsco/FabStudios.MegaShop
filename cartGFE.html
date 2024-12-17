@@ -41,8 +41,10 @@
                         <span></span>
                     </div>
                     <ul class="nav-links" id="nav-links">
-                          <li><a href="./index.html"><i class="material-icons">local_offer</i> Productos</a></li>
-    
+                          <!-- <li><a href="./index.html"><i class="material-icons">local_offer</i> Productos</a></li> -->
+                          
+                        <li> <a href="#" onclick="closeCartTab()"><i class="material-icons">local_offer</i>Volver</a></li>     
+                        
                         <li><a href="./nosotros.html"><i class="material-icons">group</i> Nosotros</a></li>
     
                         <li><a href="#" id="contact-link"><i class="material-icons">support_agent</i>  Contacto</a></li>
@@ -116,6 +118,24 @@
         <p>&copy; 2024 MegaShop - Derechos Reservados.</p>           
         </div>   
     </footer>
+    <script>
+        window.addEventListener('beforeunload', () => {
+        localStorage.setItem('cartUpdated', 'true');
+        });
+        function goBackToIndex() {
+  
+    </script>
+    <script>
+function closeCartTab() {
+    // Cierra la pestaña actual si fue abierta desde window.open() o target="_blank"
+    window.close();
+    
+    // Redirección de fallback si el navegador bloquea el cierre
+    setTimeout(() => {
+        window.location.href = 'about:blank';
+    }, 100);
+}
+</script>
     <script src="./scripts/library.js"></script>
     <script src="./scripts/cartGFE.js"></script>
 </body>

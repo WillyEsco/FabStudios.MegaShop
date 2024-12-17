@@ -505,7 +505,9 @@
                 <div id="cart-items"></div>
                 <div class="cart-footer">
                     <p>Total: <span id="cart-total">0.00</span></p>
-                    <button id="checkout-btn">Finalizar Compra</button>
+                    <a href="./cartGFE.html" target="_blank">
+                        <button id="checkout-btn">Finalizar Compra</button>
+                    </a>
                 </div>
             </div>
             
@@ -543,7 +545,12 @@
         <!-- script para cargar el Carrito -->
          
         <!-- <script src="./scripts/cart.js"></script> -->
-
+        <script>
+            if (localStorage.getItem('cartUpdated') === 'true') {
+                localStorage.removeItem('cartUpdated');
+                renderCartSidebar(); // Asegura que el carrito se sincronice
+            }
+        </script>
         <script src="./scripts/library.js"></script>
         <!-- <script src="./scripts/cart.js"></script> -->
 
