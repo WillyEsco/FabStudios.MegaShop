@@ -346,3 +346,13 @@ window.addEventListener('storage', (event) => {
         renderCartSidebar();
     }
 });
+
+function closeCartTab() {
+    // Cierra la pestaña actual si fue abierta desde window.open() o target="_blank"
+    window.close();
+    
+    // Redirección de fallback si el navegador bloquea el cierre
+    setTimeout(() => {
+        window.location.href = 'about:blank';
+    }, 100);
+}
