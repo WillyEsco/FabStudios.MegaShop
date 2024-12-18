@@ -65,6 +65,7 @@ document.getElementById("checkout-btn").addEventListener("click", () => {
     cart = [];
     localStorage.removeItem("cart");
     renderCart();
+    window.location.href = 'index.html';
 });
 function goBackToIndex() {
     // Verificar si la página actual se abrió en una nueva pestaña
